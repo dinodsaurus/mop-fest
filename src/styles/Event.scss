@@ -1,0 +1,100 @@
+@import "./mixins/responsiveMixin";
+
+.event {
+  margin-top: 30px;
+
+  .eventTitle {
+    margin: 0;
+    margin-left: 20%;
+    font-size: 32px;
+
+    @include breakpoint (xs) {
+      font-size: 26px;
+    }
+
+    &.fixed {
+      position: fixed;
+      top: 100px;
+
+      @include breakpoint (xs) {
+        top: 80px;
+      }
+    }
+  }
+
+  .SingleEvent {
+    display: inline-block;
+    width: 18%;
+    padding: 0 1%;
+    margin-left: 60%;
+    border-left: 1px solid black;
+    margin-top: 30px;
+    position: relative;
+    min-height: 150px;
+
+    .time {
+      position: absolute;
+      display: inline-block;
+      width: 100px;
+      transform-origin: right top;
+      text-align: right;
+      transform: rotate(270deg);
+      top: 0;
+      left: -130px;
+    }
+
+    .eventName {
+      margin-bottom: 30px;
+
+      img {
+        position: absolute;
+        top: 0;
+        left: -240px;
+        transition: 300ms;
+        opacity: 0;
+        visibility: hidden;
+        max-width: 200px;
+        height: auto;
+
+        @include breakpoint (xs) {
+          font-size: 21px;
+        }
+      }
+
+      span {
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 26px;
+
+        &:hover {
+          cursor: pointer;
+          text-decoration: underline;
+
+        & + img {
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+
+        @include breakpoint (xs) {
+          font-size: 21px;
+        }
+      }
+
+      &.last {
+        margin-bottom: 50px;
+      }
+    }
+
+    .location {
+      position: absolute;
+      bottom: 0;
+      text-transform: uppercase;
+      font-size: 12px;
+
+      .number {
+        font-size: 16px;
+      }
+    }
+  }
+}

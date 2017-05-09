@@ -1,0 +1,16 @@
+@import "./mixins/responsiveMixin";
+
+.app {
+  .hr {
+    position: fixed;
+    left: 60%;
+    width: 1px;
+    height: 100vh;
+    background: #eccc00;
+    z-index: -2;
+
+    @include breakpoint (xs) {
+      display: none;
+    }
+  }
+}
