@@ -1,5 +1,6 @@
 ## MOP 2017
 www.mop-fest.com
+![mop image](https://raw.githubusercontent.com/WhitePointX/mop2017/master/public/mop.png)
 
 ### Installation guide
 * clone the repository `git clone git@github.com:WhitePointX/mop2017.git`
