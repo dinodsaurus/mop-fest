@@ -1,5 +1,6 @@
 {
   "name": "mop2017",
+  "homepage": "http://domagojzganec.com.hr/private/mop",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {

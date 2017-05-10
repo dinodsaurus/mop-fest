@@ -12,22 +12,23 @@ class Event extends Component {
       />
     );
   }
+  renderStickyEvent(isSticky, wasSticky, style) {
+    const cls = isSticky ? "eventTitle sticky" : "eventTitle";
+    return (
+      <div style={{ ...style }}>
+        <h2 className={cls}>
+          {this.props.event.title}
+        </h2>
+      </div>
+    )
+  }
   render() {
     return (
       <StickyContainer className="eventWrapper">
         <div className="event">
-        <Sticky>
+          <Sticky>
             {
-              ({ isSticky, wasSticky, style }) => {
-                const cls = isSticky ? "eventTitle sticky" : "eventTitle";
-                return (
-                  <div style={{ ...style }}>
-                    <h2 className={cls}>
-                      {this.props.event.title}
-                    </h2>
-                  </div>
-                )
-              }
+              ({ isSticky, wasSticky, style }) => this.renderStickyEvent(isSticky, wasSticky, style)
             }
           </Sticky>
           {this.props.event.locations.map(this.renderLocation.bind(this))}

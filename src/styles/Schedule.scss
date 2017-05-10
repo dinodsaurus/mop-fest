@@ -36,11 +36,11 @@
       letter-spacing: 1.8px;
       line-height: 32px;
       display: inline-block;
-      top: 30px;
       font-size: 14px;
       position: absolute;
       left: 40px;
       z-index: 20;
+      top: -60px;
 
       span {
         text-transform: uppercase;
@@ -56,10 +56,15 @@
     }
 
     &.sticky .list {
+      top: 30px;
+
       @include breakpoint (xs) {
         position: relative;
         left: 20px;
         top: 90px;
+      }
+      @include breakpoint (xxs) {
+        display: none;
       }
     }
   }
