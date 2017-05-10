@@ -125,5 +125,9 @@
         font-size: 16px;
       }
     }
+
+    @include breakpoint (xs) {
+      margin-left: 45%;
+    }
   }
 }

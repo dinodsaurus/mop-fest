@@ -13,7 +13,7 @@ class Contact extends Component {
         <div className="content">
           <div><p className="info">Contact</p></div>
           <div><p>
-          mopfest<vbr />@gmail.com<br />+035 955127795
+          mopfest<vbr />@gmail.com<br />+385 955127795
           </p></div>
 
           <div><p className="info follow">Follow</p></div>

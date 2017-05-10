@@ -22,12 +22,15 @@
       @include breakpoint (xs) {
         font-size: 36px;
       }
+      @include breakpoint (xs) {
+        font-size: 30px;
+      }
 
     }
   }
   .listWrapper {
     position: relative;
-    z-index: 30px;
+    z-index: 30;
 
     .list {
       letter-spacing: 1.8px;
