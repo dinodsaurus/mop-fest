@@ -22,8 +22,8 @@
       @include breakpoint (xs) {
         font-size: 36px;
       }
-      @include breakpoint (xs) {
-        font-size: 30px;
+      @include breakpoint (xxs) {
+        font-size: 28px;
       }
 
     }
@@ -51,6 +51,7 @@
         position: relative;
         left: 20px;
         top: 0;
+        font-size: 12px;
       }
     }
 

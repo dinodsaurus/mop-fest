@@ -102,6 +102,10 @@
         & + img {
             opacity: 1;
             visibility: visible;
+
+            @include breakpoint (xxs) {
+              display: none;
+            }
           }
         }
 
@@ -126,8 +130,9 @@
       }
     }
 
-    @include breakpoint (xs) {
+    @include breakpoint (xxs) {
       margin-left: 45%;
+      width: 50%;
     }
   }
 }
