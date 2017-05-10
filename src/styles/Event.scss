@@ -1,15 +1,44 @@
 @import "./mixins/responsiveMixin";
 
+.eventWrapper:first-child .event .eventTitle {
+  padding-top: 0;
+
+  &.sticky {
+    padding-top: 100px;
+
+    @include breakpoint (xs) {
+        padding-top: 60px;
+    }
+  }
+}
+
 .event {
   margin-top: 30px;
 
+  &:first-child {
+    margin-top: 0;
+  }
   .eventTitle {
     margin: 0;
     margin-left: 20%;
     font-size: 32px;
+    padding-top: 100px;
+
+    &.sticky {
+      @include breakpoint (xs) {
+        padding-top: 60px;
+      }
+    }
+
+
 
     @include breakpoint (xs) {
       font-size: 26px;
+      padding-top: 60px;
+      z-index: 20;
+      background: $backgroundColor;
+      display: inline-block;
+      margin-left: 20px;
     }
 
     &.fixed {
@@ -82,7 +111,7 @@
       }
 
       &.last {
-        margin-bottom: 50px;
+        margin-bottom: 60px;
       }
     }
 

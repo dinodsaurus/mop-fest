@@ -1,59 +1,57 @@
 import React, { Component } from 'react';
+import { StickyContainer, Sticky } from "react-sticky";
 
 import events from "../data/events.json";
 import Event from "./Event";
 
 class Schedule extends Component {
-  constructor() {
-    super();
-    this.state = {
-      fixed: false
-    }
-  }
-  componentWillMount() {
-    window.addEventListener("scroll", this.onScroll.bind(this));
-  }
-  onScroll() {
-    const breakingTop = document.getElementById("breakingTop");
-    const breakingBottom = document.getElementById("breakingBottom");
-    if (
-      breakingTop.getBoundingClientRect().top < 0 && breakingBottom.getBoundingClientRect().top > 80) {
-      this.setState({ fixed: true });
-    } else {
-      this.setState({ fixed: false });
-    }
-  }
   renderEvent(event, i) {
     return (
       <Event
         key={i}
         event={event}
-        fixedDate={i === this.state.fixedDate}
       />
     );
   }
   render() {
-    const cls = this.state.fixed ? "scheduleTitle fixed" : "scheduleTitle";
     return (
-      <div id="schedule">
-        <div id="breakingTop" />
-        <div className={cls}>
-          <h1>Schedule</h1>
-          <div className="list">
-            <span>
-              &#9312; lecture<br />
-              &#9313; workshop<br />
-              &#9314; exhibition<br />
-              &#9315; music<br />
-              &#9316; film
-            </span>
+      <StickyContainer>
+        <div id="schedule">
+          <Sticky>
+            {
+              ({ isSticky, wasSticky, style }) => {
+                const cls = isSticky ? "scheduleTitle sticky" : "scheduleTitle";
+                return (
+                  <div className={cls} style={{ ...style }}>
+                    <h1>Schedule</h1>
+                  </div>
+                )
+              }
+            }
+          </Sticky>
+          <Sticky>
+            {
+              ({ isSticky, wasSticky, style }) => {
+                const cls = isSticky ? "listWrapper sticky" : "listWrapper";
+                return (
+                  <div className={cls} style={{ ...style }}>
+                    <div className="list">
+                      <span>&#9312; lecture</span>
+                      <span>&#9313; workshop</span>
+                      <span>&#9314; exhibition</span>
+                      <span>&#9315; music</span>
+                      <span>&#9316; film </span>
+                    </div>
+                  </div>
+                )
+              }
+            }
+          </Sticky>
+          <div>
+            {events.map(this.renderEvent.bind(this))}
           </div>
         </div>
-        <div>
-          {events.map(this.renderEvent.bind(this))}
-          <div id="breakingBottom" />
-        </div>
-      </div>
+      </StickyContainer>
     );
   }
 }

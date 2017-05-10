@@ -80,7 +80,7 @@
             "event": [
               {
                 "name":"404 - How to tell the story about art to general public?",
-                "image": ""
+                "image": "404_pr_fb_post.jpg"
               }
             ],
             "description": "lecture"
@@ -95,7 +95,7 @@
             "event": [
               {
                 "name":"Marko Šošić - Orion Somniator",
-                "image": ""
+                "image": "vucedol_orion_fb_post_2.jpg"
               }
             ],
             "description": "exhibition"
@@ -152,7 +152,12 @@
           },
           {
             "time": "14:30-17:00",
-            "event": [{"name":"404 - Pen, paper, pixel", "image": ""}],
+            "event": [
+              {
+                "name":"404 - Pen, paper, pixel",
+                "image": "404_neven_fb_post.jpg"
+              }
+            ],
             "description": "workshop"
           },
           {
@@ -210,7 +215,7 @@
               },
               {
                 "name": "Sowas",
-                "image": ""
+                "image": "sowas__fb_post_1.jpg"
               }
             ],
             "description": "music"

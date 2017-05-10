@@ -12,7 +12,7 @@
       text-transform: uppercase;
       font-size: 12px;
       letter-spacing: 2.2px;
-      font-weight: bold;
+      font-weight: 900;
       margin-bottom: 25px;
     }
 
@@ -25,6 +25,10 @@
         font-size: 36px;
         line-height: 39px;
       }
+      @include breakpoint (xxs) {
+          font-size: 24px;
+          line-height: 1.13;
+      }
     }
 
     .smallText {
@@ -35,6 +39,10 @@
       @include breakpoint (xs) {
         font-size: 16px;
         line-height: 32px;
+      }
+
+      @include breakpoint (xxs) {
+          line-height: 1.69;
       }
     }
   }
@@ -67,8 +75,9 @@
       margin-bottom: 40px;
     }
 
-    a {
-      color: black;
+    a.underline {
+      margin: 0 3px;
+      display: inline-block;
       @include underlineLink;
 
     }
@@ -92,6 +101,11 @@
       right: 40px;
       margin-left: 0;
       font-size: 12px;
+
+      @include breakpoint (xs) {
+        position: static;
+        margin-left: 60%;
+      }
     }
   }
 }

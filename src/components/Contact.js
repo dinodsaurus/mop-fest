@@ -18,14 +18,26 @@ class Contact extends Component {
 
           <div><p className="info follow">Follow</p></div>
           <div><p className="grid grid1 push-left-3">
-          <a href="#" target="_blank" >Facebook</a><br />
-          <a href="#" target="_blank" >Instagram</a><br />
-          <a href="#" target="_blank" >Twitter</a><br />
+          <a href="https://facebook.com/MOPfest/?ref=br_rs" target="_blank" className="underline">
+            Facebook
+          </a><br />
+          <a href="https://www.instagram.com/mopfest/" target="_blank" className="underline">
+            Instagram
+          </a><br />
+          <a href="https://twitter.com/MOPFest" target="_blank" className="underline">
+            Twitter
+          </a><br />
           </p></div>
 
           <div><p className="grid grid1 push-left-3 designedBy">
-          Designed by Fran and Marko<br />
-          Coded by Reactor<br />
+            Designed by 
+          <a href="https://dribbble.com/Mubrin" target="_blank" className="underline">Fran</a>
+          and
+          <a href="http://markohrastovec.com/" target="_blank" className="underline">Marko</a>
+          <br />
+            Coded by
+          <a href="http://reactor.studio/" target="_blank" className="underline" >Reactor</a>
+          <br />
           </p></div>
         </div>
         <a onClick={this.goToTop} className="goUp">

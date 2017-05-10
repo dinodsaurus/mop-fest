@@ -1,6 +1,6 @@
 @mixin breakpoint($class) {
   @if $class == xxs {
-    @media (max-width: 365px) {
+    @media (max-width: 475px) {
       @content;
     }
   } @else if $class == xs {

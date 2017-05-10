@@ -1,50 +1,61 @@
 @import "./mixins/responsiveMixin";
 
-
 #schedule {
   .scheduleTitle {
-    background: $backgroundColor;
+    z-index: 100;
     position: relative;
     margin-left: 20%;
     display: inline-block;
+
+    @include breakpoint (xs) {
+      margin-left: 20px;
+    }
+
     h1 {
-    margin: 0;
-    font-size: 58px;
-    font-weight: 900;
+      padding-top: 20px;
+      margin: 0;
+      font-size: 58px;
+      font-weight: 900;
+      display: inline-block;
+      background: $backgroundColor;
       
       @include breakpoint (xs) {
         font-size: 36px;
-
       }
 
     }
+  }
+  .listWrapper {
+    position: relative;
+    z-index: 30px;
 
     .list {
-      position: absolute;
-      top: 10px;
-      left: -55%;
-      font-size: 14px;
       letter-spacing: 1.8px;
       line-height: 32px;
+      display: inline-block;
+      top: 30px;
+      font-size: 14px;
+      position: absolute;
+      left: 40px;
+      z-index: 20;
 
       span {
         text-transform: uppercase;
+        display: block;
       }
 
       @include breakpoint (xs) {
-        position: static;
-        margin-top: 30px;
+        position: relative;
+        left: 20px;
+        top: 0;
       }
     }
 
-    &.fixed {
-      position: fixed;
-      padding-top: 40px;
-      top: 0;
-      left: 0;
-
-      .list {
-        top: 40px;
+    &.sticky .list {
+      @include breakpoint (xs) {
+        position: relative;
+        left: 20px;
+        top: 90px;
       }
     }
   }
