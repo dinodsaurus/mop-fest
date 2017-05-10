@@ -78,15 +78,15 @@
       img {
         position: absolute;
         top: 0;
-        left: -240px;
+        left: -640px;
         transition: 300ms;
         opacity: 0;
         visibility: hidden;
-        max-width: 200px;
+        max-width: 400px;
         height: auto;
 
-        @include breakpoint (xs) {
-          font-size: 21px;
+        @media (max-width: 1100px) {
+          display: none;
         }
       }
 
@@ -128,6 +128,10 @@
       .number {
         font-size: 16px;
       }
+    }
+
+    @include breakpoint (xs) {
+      margin-left: 58%;
     }
 
     @include breakpoint (xxs) {

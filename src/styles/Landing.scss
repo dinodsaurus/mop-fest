@@ -81,7 +81,10 @@
     width: 40%;
 
     @include breakpoint (xs) {
-      width: 58%;
+      width: 42%;
+    }
+    @include breakpoint (xxs) {
+      width: 55%;
     }
   }
 }

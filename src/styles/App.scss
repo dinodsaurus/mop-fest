@@ -10,7 +10,11 @@
     z-index: -2;
 
     @include breakpoint (xs) {
-      display: none;
+      left: 58%;
+    }
+
+    @include breakpoint (xxs) {
+      left: 45%;
     }
   }
 }
