@@ -9,9 +9,6 @@ import Thanks from "./components/Thanks";
 import Contact from "./components/Contact";
 
 class App extends Component {
-  renderEvent(event, i) {
-    return <Event key={i} event={event} />;
-  }
   render() {
     return (
       <div className="app">

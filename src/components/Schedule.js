@@ -39,6 +39,7 @@ class Schedule extends Component {
   }
 
   render() {
+    console.log("events", events);
     return (
       <StickyContainer>
         <div id="schedule">
