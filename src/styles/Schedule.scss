@@ -12,6 +12,7 @@
     }
 
     h1 {
+      transition: opacity 300ms;
       padding-top: 20px;
       margin: 0;
       font-size: 58px;
@@ -22,10 +23,14 @@
       @include breakpoint (xs) {
         font-size: 36px;
       }
-      @include breakpoint (xxs) {
-        font-size: 28px;
-      }
+    }
 
+    &.sticky {
+      @include breakpoint (xxs) {
+        h1 {
+          opacity: 0;
+        }
+      }
     }
   }
   .listWrapper {
@@ -41,6 +46,7 @@
       left: 40px;
       z-index: 20;
       top: -60px;
+      transition: opacity 300ms;
 
       span {
         text-transform: uppercase;
@@ -64,7 +70,9 @@
         top: 90px;
       }
       @include breakpoint (xxs) {
-        display: none;
+        opacity: 0;
+        left: 20px;
+        top: 0;
       }
     }
   }

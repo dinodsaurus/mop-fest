@@ -9,6 +9,9 @@
     @include breakpoint (xs) {
         padding-top: 60px;
     }
+    @include breakpoint (xxs) {
+        padding-top: 0;
+    }
   }
 }
 
@@ -23,10 +26,14 @@
     margin-left: 20%;
     font-size: 32px;
     padding-top: 100px;
+    transition: opacity 300ms;
 
     &.sticky {
       @include breakpoint (xs) {
         padding-top: 60px;
+      }
+      @include breakpoint (xxs) {
+        opacity: 0;
       }
     }
 
@@ -79,9 +86,8 @@
         position: absolute;
         top: 0;
         left: -640px;
-        transition: 300ms;
+        transition: opacity 300ms;
         opacity: 0;
-        visibility: hidden;
         max-width: 400px;
         height: auto;
         z-index: 100;
@@ -136,7 +142,7 @@
     }
 
     @include breakpoint (xxs) {
-      margin-left: 45%;
+      margin-left: 18%;
       width: 50%;
     }
   }

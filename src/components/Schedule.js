@@ -39,19 +39,14 @@ class Schedule extends Component {
   }
 
   render() {
-    console.log("events", events);
     return (
       <StickyContainer>
         <div id="schedule">
           <Sticky>
-            {
-              ({isSticky, wasSticky, style}) => this.renderStickyTitle(isSticky, wasSticky, style)
-            }
+            {({isSticky, wasSticky, style}) => this.renderStickyTitle(isSticky, wasSticky, style)}
           </Sticky>
           <Sticky>
-            {
-              ({isSticky, wasSticky, style}) => this.renderStickyLegend(isSticky, wasSticky, style)
-            }
+            {({isSticky, wasSticky, style}) => this.renderStickyLegend(isSticky, wasSticky, style)}
           </Sticky>
           <div>
             {events.map(this.renderEvent)}

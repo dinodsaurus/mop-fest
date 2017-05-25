@@ -19,6 +19,12 @@
         text-transform: uppercase;
         width: 100px;
       }
+
+      @include breakpoint (xxs) {
+        position: static;
+        margin-left: 0;
+        margin-top: 15px;
+      }
     }
 
     &.image1 {

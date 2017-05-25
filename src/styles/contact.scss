@@ -1,0 +1,63 @@
+.description.contact {
+  margin-top: 30px;
+  position: relative;
+  margin-left: 15px;
+  margin-bottom: 0;
+
+  p {
+    margin-left: 60%;
+    @include breakpoint (xxs) {
+        margin-left: 50%;
+    }
+  }
+
+  .info {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .follow {
+    font-size: 14px;
+    margin-top: 60px;
+  }
+
+  .designedBy {
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 200px;
+    margin-bottom: 40px;
+  }
+
+  a.underline {
+    margin: 0 3px;
+    display: inline-block;
+    @include underlineLink;
+
+  }
+
+  .goUp {
+    position: absolute;
+    left: 25px;
+    bottom: 30px;
+    padding: 20px 0;
+    transition: 300ms;
+
+    &:hover {
+      bottom: 33px;
+      cursor: pointer;
+    }
+  }
+
+  .copyright {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    margin-left: 0;
+    font-size: 12px;
+
+    @include breakpoint (xs) {
+      position: static;
+      margin-left: 60%;
+    }
+  }
+}
