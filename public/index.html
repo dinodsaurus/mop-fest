@@ -9,8 +9,120 @@
     <meta property="og:image" content="https://z-p3-scontent.xx.fbcdn.net/v/t35.0-12/18426781_10212135769206163_562224463_o.png?oh=82cc6f405f117cac025dee183fb903f9&oe=5915280C" />
     <meta property="og:title" content="MOP ŠPANCIRFEST Multimedia festival Varaždin" />
     <meta property="og:description" content="The festival is free and includes lectures, weekly workshops, exhibitions, video screenings, interactive installations, performances, films and audio-visual installations integrated into his music part. Starting this year, partner of MOP Association and co-organizer of multimedia festival is Varaždin Tourist Board. Festival program is free." />
+    <style>
+      @-webkit-keyframes preloader1 {
+        0%   {height: 0;}
+        25%  {height: 100px;}
+        50%  {height: 0;}
+        75%  {height: 0;}
+        100% {height: 0;}
+      }
+      @-moz-keyframes preloader1 {
+        0%   {height: 0;}
+        25%  {height: 100px;}
+        50%  {height: 0;}
+        75%  {height: 0;}
+        100% {height: 0;}
+      }
+      @keyframes preloader1 {
+        0%   {height: 0;}
+        25%  {height: 100px;}
+        50%  {height: 0;}
+        75%  {height: 0;}
+        100% {height: 0;}
+      }
+
+      @-webkit-keyframes preloader2 {
+        0%   {height: 100px;}
+        25%  {height: 0;}
+        50%  {height: 100px;}
+        75%  {height: 0;}
+        100% {height: 100px;}
+      }
+      @-moz-keyframes preloader2 {
+        0%   {height: 100px;}
+        25%  {height: 0;}
+        50%  {height: 100px;}
+        75%  {height: 0;}
+        100% {height: 100px;}
+      }
+      @keyframes preloader2 {
+        0%   {height: 100px;}
+        25%  {height: 0;}
+        50%  {height: 100px;}
+        75%  {height: 0;}
+        100% {height: 100px;}
+      }
+
+      @-webkit-keyframes preloader3 {
+        0%   {height: 0;}
+        25%  {height: 0;}
+        50%  {height: 0;}
+        75%  {height: 100px;}
+        100% {height: 0;}
+      }
+      @-moz-keyframes preloader3 {
+        0%   {height: 0;}
+        25%  {height: 0;}
+        50%  {height: 0;}
+        75%  {height: 100px;}
+        100% {height: 0;}
+      }
+      @keyframes preloader3 {
+        0%   {height: 0;}
+        25%  {height: 0;}
+        50%  {height: 0;}
+        75%  {height: 100px;}
+        100% {height: 0;}
+      }
+    </style>
+>>>>>>> implemented preloader
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+       <div
+        style="
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        ">
+          <div style="
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);"
+          >
+            <div style="
+            width: 300px;
+            animation-name: preloader1;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-direction: reverse;
+            background: white;
+            ">              
+            </div>
+            <div style="
+            width: 300px;
+            animation-name: preloader2;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-direction: reverse;
+            background: #ffd938;
+            ">              
+            </div>
+            <div style="
+            width: 300px;
+            animation-name: preloader3;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-direction: reverse;
+            background: white;
+            ">              
+            </div>
+          </div>
+        </div>
+    </div>
   </body>
 </html>
