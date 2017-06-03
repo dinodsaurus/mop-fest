@@ -3,13 +3,27 @@ import goUp from "../images/arrow_scroll_up.svg";
 require('smoothscroll-polyfill').polyfill();
 
 class Contact extends Component {
+  constructor() {
+    super();
+    this.state = { shown: false };
+  }
+  componentWillMount() {
+    window.addEventListener("scroll", this.onScroll.bind(this));
+  }
+  onScroll() {
+    const mainDiv = document.getElementById("contact");
+    if(mainDiv.getBoundingClientRect().top < 500 && !this.state.shown) {
+      this.setState({ shown: true})
+    }
+  }
   goToTop() {
     const landing = document.getElementById("landing");
     landing.scrollIntoView({ behavior: "smooth" });
   }
   render() {
+    const cls = this.state.shown ? "description contact" : "description contact hidden";
     return (
-      <div className="description contact">
+      <div className={cls} id="contact">
         <div className="content">
           <div><p className="info">Contact</p></div>
           <div><p>

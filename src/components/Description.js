@@ -1,9 +1,23 @@
 import React, { Component } from 'react';
 
 class Description extends Component {
+  constructor() {
+    super();
+    this.state = { shown: false };
+  }
+  componentWillMount() {
+    window.addEventListener("scroll", this.onScroll.bind(this));
+  }
+  onScroll() {
+    const mainDiv = document.getElementById("description");
+    if(mainDiv.getBoundingClientRect().top < 500 && !this.state.shown) {
+      this.setState({ shown: true})
+    }
+  }
   render() {
+    const cls = this.state.shown ? "description" : "description hidden"
     return (
-      <div id="description" className="description">
+      <div id="description" className={cls}>
         <div className="content">
           <div><p className="grid grid2 push-left-1 info">Info</p></div>
           <div>

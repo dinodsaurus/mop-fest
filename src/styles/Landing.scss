@@ -1,6 +1,18 @@
 @import "./mixins/responsiveMixin";
 @import "./mixins/underlineLink";
 
+.example-appear {
+  opacity: 0.01;
+  transform: translate(0, 100px);
+}
+
+.example-appear.example-appear-active {
+  opacity: 1;
+  transform: translate(0, 0);
+  transition: .6s;
+}
+
+
 .landing {
   min-height: 100vh;
   position: relative;

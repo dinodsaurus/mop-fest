@@ -4,6 +4,12 @@
 .description {
   margin-bottom: 240px;
   margin-top: 240px;
+  transition: 600ms;
+
+  &.hidden {
+    opacity: 0;
+    transform: translate(0, 100px);
+  }
 
   .content {
     margin-top: 50px;

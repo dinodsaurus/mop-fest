@@ -5,6 +5,19 @@ import events from "../data/events.json";
 import Event from "./Event";
 
 class Schedule extends Component {
+  constructor() {
+    super();
+    this.state = { shown: false };
+  }
+  componentWillMount() {
+    window.addEventListener("scroll", this.onScroll.bind(this));
+  }
+  onScroll() {
+    const mainDiv = document.getElementById("schedule");
+    if(mainDiv.getBoundingClientRect().top < 500 && !this.state.shown) {
+      this.setState({ shown: true})
+    }
+  }
   renderEvent(event, i) {
     return (
       <Event
@@ -39,9 +52,10 @@ class Schedule extends Component {
   }
 
   render() {
+    const cls = this.state.shown ? "" : "hidden";
     return (
       <StickyContainer>
-        <div id="schedule">
+        <div id="schedule" className={cls}>
           <Sticky>
             {({isSticky, wasSticky, style}) => this.renderStickyTitle(isSticky, wasSticky, style)}
           </Sticky>

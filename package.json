@@ -48,6 +48,7 @@
   "dependencies": {
     "fixed-sticky": "^0.1.7",
     "react": "^15.5.4",
+    "react-addons-css-transition-group": "^15.5.2",
     "react-dom": "^15.5.4",
     "react-sticky": "^6.0.1",
     "smoothscroll-polyfill": "^0.3.5"

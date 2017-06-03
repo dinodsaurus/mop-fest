@@ -3,6 +3,12 @@
   position: relative;
   margin-left: 15px;
   margin-bottom: 0;
+  transition: 600ms;
+
+  &.hidden {
+    opacity: 0;
+    transform: translate(0, 100px);
+  }
 
   p {
     margin-left: 60%;

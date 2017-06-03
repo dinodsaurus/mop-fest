@@ -1,6 +1,13 @@
 @import "./mixins/responsiveMixin";
 
 .images {
+  transition: 600ms;
+
+  &.hidden {
+    opacity: 0;
+    transform: translate(0, 100px);
+  }
+
   .wrapper {
     position: relative;
     display: inline-block;

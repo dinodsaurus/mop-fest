@@ -8,9 +8,23 @@ import imageSource5 from "../images/collection/hdd_workshop_img.jpg";
 import imageSource6 from "../images/collection/degordian_img.jpg";
 
 class Images extends Component {
+    constructor() {
+    super();
+    this.state = { shown: false };
+  }
+  componentWillMount() {
+    window.addEventListener("scroll", this.onScroll.bind(this));
+  }
+  onScroll() {
+    const mainDiv = document.getElementById("imagesDiv");
+    if(mainDiv.getBoundingClientRect().top < 500 && !this.state.shown) {
+      this.setState({ shown: true})
+    }
+  }
   render() {
+    const cls = this.state.shown ? "images" : "images hidden"
     return (
-      <div className="images">
+      <div className={cls} id="imagesDiv">
         <div className="wrapper image1">
           <img src={imageSource1} alt="mop" />
           <div>

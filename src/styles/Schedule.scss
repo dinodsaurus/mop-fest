@@ -1,6 +1,14 @@
 @import "./mixins/responsiveMixin";
 
 #schedule {
+
+  transition: 600ms;
+
+  &.hidden {
+    opacity: 0;
+    transform: translate(0, 100px);
+  }
+
   .scheduleTitle {
     z-index: 100;
     position: relative;

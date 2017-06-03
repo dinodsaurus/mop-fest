@@ -9,6 +9,7 @@
 @import "./contact";
 @import "./Images";
 @import "./Schedule";
+@import "./Loading";
 
 * {
   box-sizing: border-box;
@@ -20,4 +21,5 @@ body {
   color: $textColor;
   background: $backgroundColor;
 }
+
 
