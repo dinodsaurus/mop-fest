@@ -1,6 +1,6 @@
 {
   "name": "mop2017",
-  "homepage": "http://domagojzganec.com.hr/private/mop",
+  "homepage": "http://mop-fest.com",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
@@ -58,7 +58,7 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
-    "deploy": "npm run dist && gh-pages -d build -b master"
+    "deploy": "npm run build && gh-pages -d build -b master"
   },
   "jest": {
     "collectCoverageFrom": [
