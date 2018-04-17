@@ -1,0 +1,120 @@
+@import "utils/colors";
+@import "utils/fonts";
+@import "utils/responsive";
+
+
+.about{
+  padding-top:100px;
+  @include breakpoint(md) {
+    padding-top:50px;
+  }
+  .text{
+    float:right;
+    width:560px;
+    @include breakpoint(sm) {
+      width: 100%;
+      margin:auto;
+    }
+    h3{
+      font-size:36px;
+      @include publico-bold;
+      margin-bottom:20px;
+      text-transform:uppercase;
+    }
+    h4{
+      font-size:20px;
+      line-height: 1.5;
+      margin-bottom:20px;
+    }
+    p{
+      font-size:16px;
+      color:$dorado;
+      line-height: 1.5;
+
+    }
+  }
+  .links{
+    float:right;
+    width: 560px;
+    padding-top:50px;
+    margin-top:30px;
+    border-top:1px solid $dorado;
+    @include breakpoint(md) {
+      width: 100%;
+    }
+    .left{
+      float:left;
+      @include breakpoint(md) {
+        width: 100%;
+      }
+      h3{
+        color:$dorado;
+        @include publico-bold;
+        font-size:14px;
+        line-height: 1.5;
+      }
+    }
+    .right{
+      float:right;
+      width: 460px;
+      @include breakpoint(md) {
+        float:left;
+        width: 100%;
+      }
+      p{
+        color:$dorado;
+        font-size:14px;
+        line-height: 1.5;
+      }
+      a{
+        color:$dorado;
+        text-decoration:none;
+        font-size:14px;
+      }
+    }
+  }
+  .img{
+    float:left;
+    width: 100%;
+    margin:50px 0;
+    img{
+      float:right;
+      width: 100%;
+      opacity:.5;
+      transition:opacity .3s;
+      @include breakpoint(md) {
+        width: 100%;
+      }
+      &:hover{
+        opacity:1;
+      }
+    }
+  }
+  .contact{
+    float:right;
+    width: 560px;
+    border-bottom:1px solid $dorado;
+    @include breakpoint(md) {
+      float:left;
+      width:100%;
+    }
+    p{
+      float:left;
+      color:$dorado;
+      margin-bottom:40px;
+      &:nth-child(2){
+        margin-left:50px;
+        @include breakpoint(md) {
+          margin-left:30px;
+        }
+        @include breakpoint(xs) {
+          width: 100%;
+          margin-left:0;
+        }
+      }
+      span{
+        color:$green;
+      }
+    }
+  }
+}

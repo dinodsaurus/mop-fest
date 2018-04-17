@@ -1,0 +1,265 @@
+@import "utils/colors";
+@import "utils/fonts";
+@import "utils/responsive";
+
+.schedule{
+  position:absolute;
+  top:100%;
+  width: 100%;
+  .nav{
+    position:absolute;
+    top: -115px;
+    height: 115px;
+    width: 100%;
+    z-index: 10;
+    overflow:hidden;
+    &.active{
+      .arrows{
+        .first{
+          bottom:-100px;
+        }
+        .second{
+          bottom:30px;
+        }
+      }
+    }
+    ul{
+      width: 100%;
+      height: 115px;
+      li{
+        width: 25%;
+        height: 115px;
+        float:left;
+        background:#1A1A1A;
+        border-right:1px solid $black;
+        padding:30px;
+        transition: background .3s;
+        cursor:pointer;
+        color:$green;
+        @include breakpoint(sm) {
+          width:33.33%;
+          padding:30px 10px;
+        }
+        &.arr{
+          padding:0;
+          @include breakpoint(sm) {
+            display:none;
+          }
+        }
+        &.active{
+          color:#1A1A1A!important;
+          background:$green;
+          &.red{
+            background:$red
+          }
+          &.blue{
+            background: $blue;
+          }
+        }
+        .arrows{
+          position:relative;
+          height: 115px;
+          .first{
+            bottom:30px;
+          }
+          .second{
+            bottom:130%;
+          }
+          a{
+            position:absolute;
+            color:$dorado;
+            left: 30px;
+            transition:all .4s;
+          }
+          span{
+            font-size:50px;
+            margin-right:30px;
+            color:$green;
+          }
+        }
+
+        h4{
+          @include publico-bold;
+          font-size:36px;
+          margin-bottom:5px;
+          @include breakpoint(sm) {
+            font-size:30px;
+            display:none;
+          }
+          &.small{
+            display:none;
+            @include breakpoint(sm) {
+              display:block;
+            }
+          }
+        }
+        p{
+          font-size:14px;
+          @include breakpoint(sm) {
+            font-size:12px;
+            line-height: 1.5;
+          }
+        }
+      }
+    }
+  }
+  .program{
+    position:relative;
+    padding-top:100px;
+    .pres{
+      display: table;
+      position:relative;
+      left:0%;
+      width: 100%;
+      border-top:1px solid $mineShaft;
+      cursor:pointer;
+      margin-bottom:0;
+      &:last-child{
+        border-bottom:1px solid $mineShaft;
+      }
+      &.ng-move,
+      &.ng-enter,
+      &.ng-leave {
+        transition:left 0.4s;
+      }
+      &.ng-leave{
+        display:none;
+      }
+      &.ng-leave.ng-leave-active{
+        display:none;
+      }
+      &.ng-enter {
+        left:100%;
+      }
+      &.ng-enter.ng-enter-active {
+        left:0%;
+      }
+      &.active{
+        .hidden{
+          max-height:18px;
+        }
+        .bigHidden{
+          max-height:300px;
+        }
+        .links{
+          max-height:300px;
+        }
+        .bigDesc{
+          max-height:500px;
+        }
+        @include breakpoint(sm) {
+          .links{
+            margin-bottom:20px;
+          }
+          .name{
+            margin-top:20px;
+          }
+          .theme{
+            margin-bottom:20px;
+          }
+        }
+
+      }
+      img{
+        width: 60px;
+        height: 60px;
+        border-radius:30px;
+        margin-bottom:20px;
+        filter: grayscale(100%);
+        margin-right:20px;
+      }
+
+      p{
+        font-size:20px;
+        @include publico-bold;
+        line-height: 1.4;
+      }
+      .short{
+        letter-spacing: 3px;
+      }
+      .hidden, .bigHidden{
+        max-height:0;
+        font-size:12px;
+        line-height: 1.8;
+        color:$dorado;
+        overflow:hidden;
+        transition:max-height .3s;
+      }
+      .vis{
+        margin:10px 0 20px 0;
+        @include breakpoint(xs) {
+          margin:10px 0 0;
+        }
+      }
+      .name{
+        .vis{
+          @include breakpoint(xs) {
+            margin:0;
+          }
+        }
+
+      }
+      .heading{
+        @include breakpoint(xs) {
+          font-size:22px;
+        }
+      }
+      .links{
+        .line{
+          width: 25px;
+          height: 1px;
+          background: $green;
+          margin:25px 0;
+        }
+        a{
+          color:$dorado;
+          text-decoration:none;
+          transition:color .3s;
+          &:hover{
+            color:white;
+          }
+        }
+      }
+      &>div{
+        display: table-cell;
+        float: none !important;
+        padding:20px 0;
+        @include breakpoint(sm) {
+          display:block;
+          float:left;
+          width: 100%;
+          border-color:$dorado;
+        }
+      }
+      .time{
+        width:25%;
+        @include breakpoint(sm) {
+          width: 100%;
+          padding:10px 0 0 0;
+        }
+      }
+      .name{
+        padding:20px;
+        border-left:1px solid $mineShaft;
+        border-right:1px solid $mineShaft;
+        @include breakpoint(sm) {
+          border-left:none;
+          border-right:none;
+          padding:0;
+        }
+      }
+      .theme{
+        width: 50%;
+        padding:20px;
+        @include breakpoint(sm) {
+          padding:0;
+          width: 100%;
+          border-bottom:none;
+        }
+        .vis{
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+}

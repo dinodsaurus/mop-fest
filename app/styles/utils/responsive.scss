@@ -1,0 +1,31 @@
+// RESPONSIVE VARIABLES
+
+$responsive-screen-lg: 1100px;
+$responsive-screen-md: 992px;
+$responsive-screen-sm: 768px;
+$responsive-screen-xs: 480px;
+
+
+@mixin breakpoint($class: custom, $maxmin: max-width, $size: 0) {
+    @if $class == xs {
+        @media ($maxmin: $responsive-screen-xs) {
+            @content;
+        }
+    } @else if $class == sm {
+        @media ($maxmin: $responsive-screen-sm) {
+            @content;
+        }
+    } @else if $class == md {
+        @media ($maxmin: $responsive-screen-md) {
+            @content;
+        }
+    } @else if $class == lg {
+        @media ($maxmin: $responsive-screen-lg) {
+            @content;
+        }
+    } @else {
+        @media ($maxmin: $size) {
+            @content;
+        }
+    }
+}

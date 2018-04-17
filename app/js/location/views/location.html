@@ -1,0 +1,78 @@
+<div class="guests">
+  <div class="container">
+    <div class="top" sticky sticky-class="active" media-query="min-width: 768px">
+      <div class="line bgChange"></div>
+      <h2>Varaždin</h2>
+      <div class="arrows">
+        <a class="first hoverChange"  ng-click="main.scrollTo('win')">Scroll down <span class="icon-arrow_down colorChange"></span></a>
+        <a class="second hoverChange" ng-click="main.scrollTo(0)">Scroll up <span class="icon-arrow_up colorChange"></span></a>
+      </div>
+    </div>
+    <div class="location">
+      <div class="firstSec">
+        <p>Predavanja</p>
+        <h3 class="colorChange">PALAČA HERZER<br/>FRANJEVAČKI TRG 6</h3>
+        <h4 class="colorChange">Sva predavanja i radionice održavaju se u palači Herzer u samom centru grada. U palači će se osim predavanja odvijati projekcije filmova i izložbe.</h4>
+      </div>
+      <div class="loc">
+        <img ng-if="main.color === 'green'" src="img/lokacija/green.png" alt="">
+        <img ng-if="main.color === 'blue'" src="img/lokacija/blue.png" alt="">
+        <img ng-if="main.color === 'red'" src="img/lokacija/red.png" alt="">
+      </div>
+      <div class="imgs">
+        <div class="img first">
+          <p>Super predavanja</p>
+          <img src="img/dvorana.jpg" alt="">
+        </div>
+        <div class="img second">
+          <p>Odlična atmosfera</p>
+          <img src="img/atmosfera.jpg" alt="">
+        </div>
+      </div>
+      <div class="fun">
+        <p>Zabava</p>
+        <h3 class="colorChange">ATRIJ STARI GRAD <br/>I LAVRA BAR</h3>
+        <h4 class="colorChange">Večernji dio programa odvijati će se 21.05. i 22.05. u baru Lavra dok će završni MOP party biti u atriju Starog grada Varaždin.</h4>
+        <img src="img/zabava.jpg" alt="">
+      </div>
+      <div class="map">
+        <p>DOBRO JE ZNATI</br>
+            Svi putevi vode u Varaždin!</p>
+        <ul>
+          <li class="borderChange">
+            <p>New York</p>
+            <p>6908 km</p>
+          </li>
+          <li class="borderChange">
+            <p>Tokyo</p>
+            <p>9294 km</p>
+          </li>
+          <li class="borderChange">
+            <p>Berlin</p>
+            <p>723 km</p>
+          </li>
+          <li class="borderChange">
+            <p>London</p>
+            <p>1332 km</p>
+          </li>
+          <li class="borderChange">
+            <p>Barcelona</p>
+            <p>1259 km</p>
+          </li>
+          <li class="borderChange">
+            <p>Zagreb :)</p>
+            <p>61 km</p>
+          </li>
+        </ul>
+        <div class="gmap">
+          <ui-gmap-google-map center="location.map.center" zoom="location.map.zoom" options="location.options">
+            <ui-gmap-window coords="'coordinates'" show="windowOptions.show" closeClick="closeClick()">
+            </ui-gmap-window>
+            <ui-gmap-markers models="location.markers" coords="'coordinates'" icon="'icon'"></ui-gmap-markers>
+          </ui-gmap-google-map>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div ng-include src="'main/views/footer.html'"></div>
+</div>

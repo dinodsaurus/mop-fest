@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="" ng-app="mopfest2015">
+  <head>
+    <meta charset="utf-8">
+
+    <meta name="description" content="MOP 04 je četvrto izdanje MOP Festivala multimedije u Varaždinu kroz koji se promiče multimedija, oblikovanje i primjena. Fokus ovogodišnjeg programa je digitalni svijet u kojem živimo, radimo i stvaramo.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>Mop festival multimedije 2015</title>
+    <meta property="og:image" content="http://mop-fest.com/img/face.jpg" />
+
+    <!--D+P-->
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/utils/reset.css">
+    <link rel="stylesheet" href="styles/sound.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/schedule.css">
+    <link rel="stylesheet" href="styles/guests.css">
+    <link rel="stylesheet" href="styles/partners.css">
+    <link rel="stylesheet" href="styles/location.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <!-- endbuild -->
+
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="mop2015" ng-controller="MainController as main"
+          ng-class="{green: main.color ==='green', blue: main.color === 'blue', red: main. color === 'red'}">
+      <div ui-view></div>
+
+    </div>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="./bower_components/angular/angular.js"></script>
+    <script src="./bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="./bower_components/angular-mocks/angular-mocks.js"></script>
+    <script src="./bower_components/matchmedia/matchMedia.js"></script>
+    <script src="./bower_components/ngSticky/lib/sticky.js"></script>
+    <script src="./bower_components/angular-local-storage/dist/angular-local-storage.js"></script>
+    <script src="./bower_components/lodash/lodash.js"></script>
+    <script src="./bower_components/angular-google-maps/dist/angular-google-maps.js"></script>
+    <script src="./bower_components/angular-animate/angular-animate.js"></script>
+    <script src="./bower_components/angular-scroll/angular-scroll.js"></script>
+    <script src="./bower_components/angular-touch/angular-touch.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/templates.js -->
+    <script src="partials/templates.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js scripts/app.js -->
+    <script src="js/app.js"></script>
+    <script src="constants.js"></script>
+    <script src="js/main/controllers/MainController.js"></script>
+    <script src="js/main/controllers/HomeController.js"></script>
+    <script src="js/main/services/SoundService.js"></script>
+
+    <script src="js/schedule/controllers/ScheduleController.js"></script>
+    <script src="js/location/controllers/LocationController.js"></script>
+    <script src="js/about/controllers/AboutController.js"></script>
+    <script src="js/guests/controllers/GuestsController.js"></script>
+    <script src="js/guests/services/GuestService.js"></script>
+    <script src="js/partners/controllers/PartnersController.js"></script>
+    <!-- endbuild -->
+  </body>
+  </html>

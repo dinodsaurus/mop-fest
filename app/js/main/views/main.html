@@ -1,0 +1,67 @@
+<div class="home">
+  <div class="head" full-height>
+    <a ng-click="main.toggleMenu()">
+      <div class="menu" ng-class="{active: main.menu}">
+        <span class="icon-hamburger colorChange"></span>
+        <span class="icon-X colorChange"></span>
+        <p>Menu</p>
+      </div>
+    </a>
+    <div class="colors" ng-class="{active: main.menu}">
+      <div class="circle green"
+            ng-click="main.changeColor('green')"
+            ng-class="{active: main.color === 'green'}"
+            ></div>
+      <div class="circle blue"
+            ng-click="main.changeColor('blue')"
+            ng-class="{active: main.color === 'blue'}"
+            ></div>
+      <div class="circle red"
+            ng-click="main.changeColor('red')"
+            ng-class="{active: main.color === 'red'}"
+            ></div>
+    </div>
+    <div id="bars" ng-class="{active: main.menu}" ng-click="main.toggleSound()">
+      <div class="line" ng-if="!main.sound"></div>
+      <div class="bar bgChange"></div>
+      <div class="bar bgChange"></div>
+      <div class="bar bgChange"></div>
+      <div class="bar bgChange"></div>
+    </div>
+    <div class="navigation bgChange" ng-class="{active: main.menu}">
+      <div class="links">
+        <div class="line" ng-class="main.menuHover"></div>
+        <ul ng-mouseleave="main.menuHover = main.currentActive">
+          <li ng-mouseenter="main.menuHover = 'first'">
+            <a ui-sref="main.home" ng-click="main.switchLink('first')">Naslovna</a>
+          </li>
+          <li ng-mouseenter="main.menuHover = 'second'">
+            <a ui-sref="main.schedule" ng-click="main.switchLink('second')">Program</a>
+          </li>
+          <li ng-mouseenter="main.menuHover = 'third'">
+            <a ui-sref="main.guests" ng-click="main.switchLink('third')">Gosti</a>
+          </li>
+          <li ng-mouseenter="main.menuHover = 'fourth'">
+            <a ui-sref="main.location" ng-click="main.switchLink('fourth')">Lokacija</a>
+          </li>
+          <li ng-mouseenter="main.menuHover = 'fifth'">
+            <a ui-sref="main.partners" ng-click="main.switchLink('fifth')">Partneri</a>
+          </li>
+          <li ng-mouseenter="main.menuHover = 'sixth'">
+            <a ui-sref="main.about" ng-click="main.switchLink('sixth')">Info</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="text">
+      <div class="bck" ng-style="main.headImg"></div>
+      <div class="container">
+        <div class="headText" ng-mouseenter="main.generateImage()">
+          <h1 class="colorChange">{{ main.headText }}</h1>
+          <h2 class="colorChange">MOP 04<br/> Festival multimedije<br/> 21.5. — 23.5.2015.</br> Varaždin</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div ui-view="content"></div>
+</div>

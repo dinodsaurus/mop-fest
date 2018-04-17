@@ -1,0 +1,185 @@
+@import "utils/colors";
+@import "utils/fonts";
+@import "utils/responsive";
+
+.guests{
+  position:absolute;
+  top:100%;
+  width: 100%;
+  height: 1000px;
+  .top{
+    position:absolute;
+    width: 1100px;
+    height: 115px;
+    top:-115px;
+    background: $codGray1;
+    z-index:10;
+    overflow:hidden;
+    @include breakpoint(xs) {
+      width: 90%;
+      height: 90px;
+      top:-90px;
+    }
+    &.active{
+      .arrows{
+        .second{
+          bottom:30px;
+        }
+        .first{
+          bottom:-100px;
+        }
+      }
+    }
+    .line{
+      float:left;
+      width: 75px;
+      height: 1px;
+      margin:55px 50px 50px 50px;
+      background: $green;
+      @include breakpoint(xs) {
+        width: 45px;
+        margin:45px 20px;
+      }
+    }
+    h2{
+      float:left;
+      display:block;
+      line-height: 115px;
+      @include publico-bold;
+      font-size:24px;
+      color: $dorado;
+      text-transform:uppercase;
+      @include breakpoint(xs) {
+        line-height: 90px;
+        font-size:16px;
+      }
+    }
+    .arrows{
+      width: 205px;
+      height: 115px;
+      position:relative;
+      float:right;
+      color: $dorado;
+      @include breakpoint(sm) {
+        display:none;
+      }
+      .second{
+        bottom:120%;
+      }
+      .first{
+        bottom:30px;
+      }
+      a{
+        position:absolute;
+        right:50px;
+        transition:all .4s;
+      }
+      span{
+        font-size:50px;
+        color:$green;
+        margin-left:20px;
+      }
+    }
+  }
+  .list{
+    a{
+      float:left;
+      position:relative;
+      float:left;
+      width: 33.33%;
+      border-right: 1px solid $codGray;
+      border-top: 1px solid $codGray;
+      &:nth-child(1),&:nth-child(4),&:nth-child(7),&:nth-child(10),&:nth-child(13),&:nth-child(16),&:nth-child(19),&:nth-child(22),&:nth-child(25){
+        border-left: 1px solid $codGray;
+        @include breakpoint(md) {
+          border-left:none;
+        }
+      }
+      &:nth-last-child(-n+3){
+        border-bottom:1px solid $codGray;
+        @include breakpoint(md) {
+          border-bottom:none;
+        }
+      }
+      @include breakpoint(md) {
+        width: 50%;
+        &:nth-child(1),&:nth-child(3),&:nth-child(5),&:nth-child(7),&:nth-child(9),&:nth-child(11),&:nth-child(13),&:nth-child(15),&:nth-child(17),&:nth-child(19),&:nth-child(21),&:nth-child(23),&:nth-child(25),&:nth-child(27){
+          border-left: 1px solid $codGray;
+        }
+        &:nth-last-child(-n+2){
+          border-bottom:1px solid $codGray;
+        }
+      }
+      @include breakpoint(xs) {
+        width: 100%;
+        border-left: none!important;
+        border-bottom: none!important;
+        border-top: none;
+        border-right: none;
+
+      }
+
+    }
+    li{
+      position:relative;
+      float:left;
+      width: 100%;
+      height: 510px;
+      padding:50px;
+      transition:background .3s;
+      @include breakpoint(md) {
+        height:450px;
+        padding:10px;
+      }
+      @include breakpoint(xs) {
+        height:330px;
+      }
+      &:hover{
+        background:$codGray;
+        h3{
+          color:$green;
+          transition: color .3s;
+        }
+        img{
+          opacity:1;
+          transform:scale(1.1);
+        }
+      }
+      .line{
+        width: 75px;
+        height: 1px;
+        background: $green;
+        margin-bottom:35px;
+        @include breakpoint(sm) {
+          margin-top:20px;
+        }
+      }
+      h3{
+        margin-bottom:30px;
+        color:$dorado;
+        @include publico-bold;
+        font-size:24px;
+        line-height: 1.5;
+      }
+      img{
+        position:absolute;
+        bottom:65px;
+        max-width: 265px;
+        border-radius: 50%;
+        opacity:.8;
+        transition:all .3s;
+        transform:(scale 1);
+        @include breakpoint(lg) {
+          width: 200px;
+          left: 0;
+          right: 0;
+          margin: auto;
+        }
+        @include breakpoint(xs) {
+          width: 130px;
+          bottom:30px;
+        }
+      }
+    }
+  }
+}

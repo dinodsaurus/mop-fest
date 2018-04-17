@@ -1,0 +1,48 @@
+@import "utils/colors";
+#bars {
+  cursor:pointer;
+    position: fixed;
+    height: 30px;
+    width: 30px;
+    bottom: 30px;
+    left: -50px;
+    z-index:100;
+    transition:left .5s;
+    .line{
+      transform: rotate(-45deg);
+      position:absolute;
+      top:20px;
+      left:-15px;
+      width: 55px;
+      height: 1px;
+      background: $red;
+    }
+}
+
+.bar {
+  background: $green;
+  bottom: 1px;
+  height: 3px;
+  position: absolute;
+  width: 1px;
+  animation-name: soundbar;
+  animation-duration: .8s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes soundbar {
+    0% {
+       opacity: .35;
+        height: 3px;
+    }
+    100% {
+        opacity: 1;
+        height: 28px;
+    }
+}
+
+.bar:nth-child(1)  { left: 1px; animation-duration: 474ms; }
+.bar:nth-child(2)  { left: 8px; animation-duration: 433ms; }
+.bar:nth-child(3)  { left: 15px; animation-duration: 400ms; }
+.bar:nth-child(4)  { left: 22px; animation-duration: 450ms; }

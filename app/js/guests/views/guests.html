@@ -1,0 +1,22 @@
+<div class="guests">
+  <div class="container">
+    <div class="top" sticky sticky-class="active" media-query="min-width: 768px">
+      <div class="line bgChange"></div>
+      <h2>Naši gosti</h2>
+      <div class="arrows">
+        <a class="first hoverChange" ng-click="main.scrollTo('win')">Scroll down <span class="icon-arrow_down colorChange"></span></a>
+        <a class="second hoverChange" ng-click="main.scrollTo(0)">Scroll up <span class="icon-arrow_up colorChange"></span></a>
+      </div>
+    </div>
+    <ul class="list">
+      <a class="group" ui-sref="main.schedule({ day: guest.day, guest: guest.id })" ng-repeat="guest in guests.guests">
+        <li>
+          <div class="line bgChange"></div>
+          <h3 class="hoverChange">{{guest.name}}</h3>
+          <img ng-src="img/guests/{{guest.img}}" alt="{{guest.name}}">
+        </li>
+      </a>
+    </ul>
+  </div>
+  <div ng-include src="'main/views/footer.html'"></div>
+</div>

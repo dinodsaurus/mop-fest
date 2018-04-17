@@ -1,0 +1,63 @@
+<div class="schedule">
+  <div class="nav" sticky sticky-class="active" media-query="min-width: 768px">
+    <div class="container">
+      <ul>
+        <li class="arr">
+          <div class="arrows">
+            <a class="first hoverChange" ng-click="main.scrollTo('win')"><span class="icon-arrow_down colorChange"></span> Scroll down</a>
+            <a class="second hoverChange" ng-click="main.scrollTo(0)"><span class="icon-arrow_up colorChange"></span>Scroll up</a>
+          </div>
+        </li>
+        <li class="colorChange" ng-click="schedule.switchDay()" ng-class="{active: schedule.activeDay == 1, green: main.color ==='green', blue: main.color === 'blue', red: main. color === 'red'}">
+          <h4 class="big">Četvrtak</h4>
+          <h4 class="small">Čet</h4>
+          <p>Dan 1 — 21.05.</p>
+        </li>
+        <li class="colorChange" ng-click="schedule.switchDay(2)" ng-class="{active: schedule.activeDay == 2, green: main.color ==='green', blue: main.color === 'blue', red: main. color === 'red'}">
+          <h4 class="big">Petak</h4>
+          <h4 class="small">Pet</h4>
+          <p>Dan 2 — 22.05.</p>
+        </li>
+        <li class="colorChange" ng-click="schedule.switchDay(3)" ng-class="{active: schedule.activeDay == 3, green: main.color ==='green', blue: main.color === 'blue', red: main. color === 'red'}">
+          <h4 class="big">Subota</h4>
+          <h4 class="small">Sub</h4>
+          <p>Dan 3 — 23.05.</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="container">
+    <div class="program">
+      <div class="pres group" id="guest{{guest.id}}" ng-repeat="guest in schedule.guests" ng-if="guest.time" ng-click="schedule.activateGuest(guest)" ng-class="{active: guest.active}">
+        <div class="time">
+          <p class="hidden short">KADA I GDJE</p>
+          <p class="vis colorChange">{{ guest.time }}</p>
+          <p class="hidden" ng-if="!guest.type">Palača Herzer</p>
+          <p class="hidden" ng-if="!guest.type">Franjevački trg 6</p>
+          <p class="hidden" ng-if="guest.type === 'lavra'">Bar Lavra</p>
+          <p class="hidden" ng-if="guest.type === 'lavra'">Ulica Ljudevita Gaja 17</p>
+        </div>
+        <div class="name">
+          <p class="hidden short">BIO</p>
+          <p class="vis colorChange">{{ guest.name }}</p>
+          <img ng-if="guest.img" class="bigHidden" ng-src="img/guests/{{guest.img}}"/>
+          <img ng-if="guest.imgs" ng-repeat="img in guest.imgs" class="bigHidden" ng-src="img/guests/{{img}}"/>
+          <p class="bigHidden" ng-class="{bigDesc: guest.bigDesc}">{{ guest.bio }}</p>
+          <div class="links bigHidden" ng-if="guest.links.length">
+            <div class="line bgChange"></div>
+            <ul>
+              <li ng-repeat="link in guest.links"><a ng-href="{{link.link}}" class="hoverChange" target="_blank">{{ link.name }}</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="theme">
+          <p class="hidden short">OPIS</p>
+          <p class="vis colorChange heading">{{guest.workshop.name}}</p>
+          <p class="bigHidden" ng-if="!guest.workshop.descriptions" ng-class="{bigDesc: guest.bigDesc}">{{guest.workshop.description}}</p>
+          <p class="bigHidden" ng-if="guest.workshop.descriptions" ng-repeat="desc in guest.workshop.descriptions">{{desc}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div ng-include src="'main/views/footer.html'"></div>
+</div>
