@@ -14,6 +14,7 @@
     "case-sensitive-paths-webpack-plugin": "1.1.4",
     "chalk": "1.1.3",
     "connect-history-api-fallback": "1.3.0",
+    "copyfiles": "^2.0.0",
     "cross-spawn": "4.0.2",
     "css-loader": "0.26.1",
     "detect-port": "1.1.0",
@@ -55,10 +56,11 @@
     "smoothscroll-polyfill": "^0.3.5"
   },
   "scripts": {
+    "copy": "copyfiles -f CNAME ./build",
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
-    "deploy": "npm run build && gh-pages -d build -b master"
+    "deploy": "npm run build && npm run copy && gh-pages -d build -b master"
   },
   "jest": {
     "collectCoverageFrom": [
