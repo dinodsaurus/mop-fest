@@ -1,0 +1,102 @@
+{
+  "schedule": [
+    {
+      "id": 1,
+      "type": "W",
+      "time": "10.00 — 15.00",
+      "location": "Palace Herzer",
+      "author": "JavaScript Zagreb",
+      "img": [{
+        "author": "Dino Trojak",
+        "position": "Developer at Two Bucks",
+        "img":"Dino_Trojak.jpg"
+      }],
+      "author_desc": "A monthly meetup of JavaScript developer enthusiasts from Zagreb and region.",
+      "title": "NodeSchool workshop - learn JavaScript",
+      "description": "NodeSchool events are open source workshops that teach web software skills, focused on Node and JavaScript. The organization is fully non profit and events are organized all over the world. At this event we will focus on getting you write your first Node application. Every participant will be assigned a mentor who will guide him through NodeSchool tutorials. Bring your laptops with power adapters and we will prepare the rest.",
+      "links": {
+        "website": "http://nodeschool.io/zagreb/",
+        "github": "https://github.com/jszgb/jszgb.github.io",
+        "meetup": "http://www.meetup.com/JavaScript-Zagreb/"
+      }
+    },
+    {
+      "id": 2,
+      "type": "W",
+      "time": "15.00 — 18.00",
+      "location": "Palace Herzer",
+      "author": "404 Agency",
+      "description": "Learn the basics of advertising with expert guidance from the digital agency 404! Find out how campaigns are made – starting with a client's brief and brainstorming all the way to the finished agency solution. Join us at the workshop if you're interested in design, copywriting, animation or team communication. What awaits you? You will learn the basics of the creative process in digital advertising. You will receive a task, solve the communication problem and produce a creative solution with the support of the team from 404. We will be focusing on a key visual and a short YouTube video. ",
+      "img": [{
+        "author": "Tom Palinić",
+        "position": "Copywriter at 404",
+        "img": "Tom_Palinic.jpg"
+      },{
+        "author": "Jakov Koščak",
+        "position": "Designer at 404",
+        "img": "Jakov_Koscak.jpg"
+      },{
+        "author": "Ivor Delić",
+        "position": "Multimedia developer at 404",
+        "img": "Ivor_Delic.jpg"
+      }
+      ],
+      "author_desc": "Agency 404 is a common denominator for a team of experts in the field of communications and digital media, at any time ready to offer the best solutions to the challenges you face in business. With acquired knowledge, specialized skills and proactive approach 404 can find solutions in the field of digital communications, public relations and design and production.",
+      "title": "Digital Advertising",
+      "links": {
+        "facebook": "https://www.facebook.com/404.agency/"
+      }
+    },
+    {
+      "id": 3,
+      "type": "W",
+      "time": "18.00 — 19.00",
+      "location": "Palace Herzer",
+      "author": "Marin Kereša",
+      "position": "CEO at nuArs",
+      "img": "Marin_Keresa.png",
+      "author_desc": "Marin Kereša, musician, producer and recording engineer, has been engaged in audio production and sound research for over ten years. Director and founder of audio/video production studio nuArs d.o.o., he leads the nuSynergetic NGO (whose goal is to promote, develop and improve alternative cultural creativity, innovative and experimental artistic practices and multidisciplinary approach in the field of culture and audio-visual and performing arts), he’s also the initiator and leader of nuArs Session (experimental, multidisciplinary artistic project).",
+      "title": " Audio signal flow in music production",
+      "description": "One of the most important aspects in music production is audio signal flow. Signal flow is a path of process where audio signal propagates from its source through transduction (acoustic-electric-digital) to final preparation and adaptation for media. In this workshop we will pay attention to analysing the most common problems and mistakes in this area of production and proper use of terminology. Throughout the workshop the whole process is presented practically, using appropriate gear and Logic Pro X programme.",
+      "links": {
+        "facebook": "https://www.facebook.com/nusynergetic"
+      }
+    },
+    {
+      "id": 7,
+      "type": "E",
+      "time": "19.00 — 19.30",
+      "author": "UNIN",
+      "author_desc": "Lucija was born in Zagreb in 1994 where she also finished secondary school of Graphic design. After it she started her studies of Media design at Sveuciliste Sjever in Koprivnica. Painting and street art are her main art focuses. Marko is also into visual art and urban exploring. He studies at University North at Koprivnica.",
+      "location": "Gallery Center Varaždin",
+      "title": "Student project: Submarine",
+      "description": "Art pieces are very often considered as an objects and not as a complete experiences. Authors wanted to present them as an experience triggers by ‘completing’ them with sound and animation."
+    },
+    {
+      "id": 5,
+      "type": "E",
+      "time": "19.35 — 19.45",
+      "author": "Vanima",
+      "location": "Cinema Galerija",
+      "author_desc": "VANIMA is one of the most active organizations in Varaždin as well as co-creator and participant of Varaždin's cultural policy.",
+      "title": "VAR-T-EKS",
+      "description": "Acronym VAR–T–EKS hides the project titled Varaždin experimental film factory done by Creative Film Studio VANIMA partnered by University North and Croatian Film Association to introduce experimental film to high school students and university students. Group of enthusiasts created their experimental works mentored by renowned author, Big Golden Arena winner, Damir Čučić, assisted by young student of the ADA Zagreb Marinko Marinkić. Head of the program is Hrvoje Selec from VANIMA while the program was mentored by Professor Robert Geček from MOP department of University North. Program was financially sponsored by the City of Varaždin and CAVC.",
+      "links": {
+        "website": "http://www.vanima.hr/"
+      }
+    },
+    {
+      "id": 6,
+      "type": "M",
+      "time": "20.15 — 21.00",
+      "location": "Cinema Galerija",
+      "author": "Monika Rusak",
+      "author_desc": "Monika Rusak was born 1991. in Varaždin. In 2013. she finished professional Graphical studies with emphasis in multimedia on the Polytechnic in Varaždin, acquired the title of bacc. ing. techn. graph.2013. - 2015. Academy of Applied Arts at the University of Rijeka, graduate study Media Arts and practices (course: Intermedia). Currently she is working as graphic editor at Varaždinske vijesti. Through three years of education at the Polytechnic in Varaždin , she intensely does photography as well as other media: video and sound.",
+      "title": "Forever: a documentary-experimental film",
+      "description": "The project «Forever» is a documentary-experimental short film that lasts 15 minutes. It is about the passing of life and the longevity of the life's greatest values. Documented recordings of the protagonist, R.J. (88), around whose life story the non-linear narrative is bulit around, are used in the film. The passing of life is shown through the simbolic use of water as the main driver of the story that metaphorically depicts the protagonist's love life, while the scenery around the river Drava and the city of Varaždin.",
+      "links": {
+        "vimeo": "https://vimeo.com/147632954"
+      }
+    }
+  ]
+}

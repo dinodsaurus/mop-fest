@@ -1,0 +1,47 @@
+{
+  "schedule": [
+    {
+      "id": 1,
+      "type": "O",
+      "time": "19.00 — 19.30",
+      "author": "MOP",
+      "title": "Doors Open — Opening speech",
+      "location": "Gallery Center Varaždin"
+    },
+    {
+      "id": 3,
+      "type": "E",
+      "time": "19.45 — 20.00",
+      "location": "Gallery Center Varaždin",
+      "position": "Freelance photographer",
+      "author": "Dario Belić",
+      "img": "Dario_Belic.png",
+      "author_desc": "Freelance photographer and videographer, student of photography at Academy of Dramatic Art in Zagreb.",
+      "title": "Where is the beginning of our private space?",
+      "description": "Using unprotected, easily accessible IP cameras I capture people and situations in their private space. Behind the cameras are people, individuals who live their lives and do not even realize they are being watched.",
+      "links": {
+        "website": "http://www.dbelic.com",
+        "behance": "http://behance.net/dariobelic",
+        "vimeo": "http://vimeo.com/dariobelic",
+        "twitter": "http://twitter.com/dariobelic",
+        "facebook": "http://facebook.com/dariobphotography/"
+      }
+    },
+    {
+      "id": 4,
+      "type": "E",
+      "time": "19.30 — 19.45",
+      "location": "Gallery Center Varaždin",
+      "author": "UNIN",
+      "title": "Mediapitch photo student exhibition"
+    },
+    {
+      "id": 5,
+      "type": "E",
+      "time": "20.00 — 20.30",
+      "author": "UNIN",
+      "location": "Gallery Center Varaždin",
+      "title": "Student design exhibition"
+    }
+  ]
+}

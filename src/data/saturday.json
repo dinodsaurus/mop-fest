@@ -1,0 +1,293 @@
+{
+  "schedule": [
+    {
+      "id": 1,
+      "type": "W",
+      "time": "10.00 — 14.00",
+      "location": "Promenade Vatroslav Jagić",
+      "author": "Maja Jandrić",
+      "img": "Maja_Jandric.jpg",
+      "position": "Student at School of design in Zagreb",
+      "author_desc": "Maja Jandrić is an award-winning designer currently working on her Master's thesis in Product design at the Zagreb School of Design. Her special interests include DIY and socially-aware design. She loves the sun, nature and board games, and her free time is most often occupied with dancing, photography and sketching.",
+      "title": "The many sides of paper",
+      "description": "This workshop deals with paper and all the ways paper can transform. Using origami techinques in a fun way can help us experience and learn some of the most important elements of design: modularity, construction, properties of materials, tactility, dynamics... Through paperplay, we will try and improve our spatial perception, dexterity, as well as a sense of teamwork!",
+      "links": {
+        "facebook": "https://www.facebook.com/Dizajnerska-po%C4%8Detnica-804629082898351/?ref=ts"
+      }
+    },
+    {
+      "id": 3,
+      "type": "L",
+      "time": "10.00 — 10.45",
+      "location": "Croatian National Theatre in Varazdin",
+      "author": "Joel Dullroy",
+      "img": "Joel_Dullroy.jpg",
+      "position": "Freelance Writer",
+      "author_desc": "Joel is a journalist, startup founder and activist for the European freelancers' movement. He lives in Berlin, where he produces a local news podcast called Radio Spaetkauf. He is the international representative of the VGSD, Germany's freelancers' association. He researches and writes about the various ways freelancers are joining together to create common solutions.",
+      "title": "Independents Unite!",
+      "description": "Freelancers work alone, but have many common problems. Across Europe, they are joining together in organizations and campaigns to improve their working and social conditions. The many different organizations meet regularly and have launched a website to draw attention to their cause:www.freelancers-europe.org. Joel Dullroy is a campaigner involved in the movement, and will talk about the various problems freelancers experience, and what we can do to fix them.",
+      "links": {
+        "twitter": "https://twitter.com/joeldullroy"
+      }
+    },
+    {
+      "id": 4,
+      "type": "L",
+      "time": "10.50 — 11.40",
+      "location": "Croatian National Theatre in Varazdin",
+      "author": "Philipp Hentschel",
+      "img": "Philipp_Hentschel.jpg",
+      "position": "Founder at welance",
+      "author_desc": "Entrepreneur and founder of welance - a Coworking Space & community of creatives in Berlin Kreuzberg. Philipp has a passion for new work models, Business Development, Project Management & Consulting. “I have been working with(in) flexible professional structures for over ten years and strive to establish lasting connections between various people & different fields of business. I am member of the Freelancer’s Movement andsupport the idea of „workation retreats“ in the countryside.",
+      "title": "Get inspired and work better tomorrow",
+      "description": "Philipp founded the welance creative collective in 2010. He proved, that freelancers who join forces can get better clients, bigger jobs, higher rates and a modern lifestyle. In his talk he will introduce the core ideas of welance and the challenges they had to face. Get inspired and work better tomorrow.",
+      "links": {
+        "twitter": "https://twitter.com/welance",
+        "facebook": "https://www.facebook.com/welance.de/",
+        "linkedin": "https://www.linkedin.com/in/philipp-hentschel-95280548"
+      }
+    },
+    {
+      "id": 5,
+      "type": "L",
+      "time": "11.50 — 12.10",
+      "location": "Croatian National Theatre in Varazdin",
+      "author": "Matija Raos",
+      "position": "President at HDNP",
+      "img": "Matija_Raos.jpg",
+      "description": "In the MOP festival's casual atmosphere, we will explore the meaning and the purpose of the slogan “Independent yet united! Freelance not Free!”. From EUROSTAT statistics we know that there are more then 200,000 independent and self-employed professionals working in Croatia, but what do we know about what they do, where they come from, what are their day-to-day problems, how much they earn, are they happy? Hrvatsko društvo nezavisnih profesionalaca (HDNP) is a young, not-for-profit professional cross-sector association which aims to create, promote and sustain a healthy ecosystem for independent and self-employed professionals working in Croatia. At the moment, HDNP represents close to 2500 independent and self-employed professionals from all sectors of the economy in Croatia with more than 70% of them working in the Cultural Creative sector. Perhaps the CC sector can serve as a catalyst in creating a flexible but structured and regulated labour market that can positively impact Croatia’s economic growth and bring innovation in solving high unemployment, especially among youth.",
+      "author_desc": "Matija is Independent Creative Strategist and visual communications designer. He’s the President of the Croatian Independent Professionals Association (HDNP) and the Program Leader of Coworking Croatia. HDNP is a nonprofit organization aiming to create, promote and sustain healthy eco-system for independent and self-employed professionals in Croatia through advocacy and business support, including professional development, job opportunity platforms and easily accessible social workplace – coworking spaces. Coworking Croatia, the national coworking community and the informal network of coworking spaces coordinated by CIPA, provides information and support platform for the creation of sustainable and collaborative coworking spaces, promotes Coworking movement and connects it to Freelancers movement in Croatia.",
+      "title": "The Story of Croatian Freelance Movement",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/matijaraos"
+      }
+    },
+    {
+      "id": 6,
+      "type": "L",
+      "time": "12.20 — 13.00",
+      "location": "Croatian National Theatre in Varazdin",
+      "author": "Tomislav Capan",
+      "position": "Developer",
+      "img": "Tomislav_Capan.jpg",
+      "author_desc": "Hi. I'm Tomislav. My passion lives with creation, with building something out of nothing; my chosen medium is computer software. I'm also a freelancer, a career path which allows me to be constantly challenged, to choose meaningful work, and to gather some flexibility in life.",
+      "title": "Tales of Freelancing from Croatia",
+      "description": "When you live in a small country, a country with an underdeveloped economy, strinving for exellence, those boundaries soon become a limiting factor. Overcoming those limitations might involve moving abroad physically for some, while for others it means just moving your mind and opening up to the world. Everyone makes their own choices, this will be a reflection of mine, and what they brought me; hoping they would inspire some of you to take the leap.",
+      "links": {
+        "twitter": "https://twitter.com/tomislavcapan",
+        "website": "https://about.me/tomislav.capan"
+      }
+    },
+    {
+      "id": 7,
+      "type": "L",
+      "time": "15.00 — 15.45",
+      "location": "Croatian National Theatre in Varazdin",
+      "author": "Šteković & Beljan",
+      "img": [{
+        "author": "Marko Beljan",
+        "position": "Designer",
+        "img": "Marko_Beljan.jpg",
+        "position": "Media Director at 404 "
+      },{
+        "author": "Zoran Šteković",
+        "position": "Designer",
+        "img": "Zoran_Stekovic.png",
+        "position": "Owner at 42"
+      }],
+      "author_desc": "Zoran has more than 15 years of experience in development of complex web based business solutions. He headed teams working on various projects for clients in different industries ranging from telecommunications to insurance and finances. Currently, he leads Number 42, a Zagreb based web studio and is a partner in sevenofnine, a mobile apps studio. About: Ever since its launch in the late 2012, ShoeBeDo continues to grow 100% on a year-to-year basis and has become a top selling store in the client's retail chain and one of the best renowned webshops in the Croatian market. Marko Beljan and Zoran Šteković will talk about what it takes to build an e-commerce of such a standard.",
+      "title": "ShoeBeDo - Croats buy shoes online too!",
+      "description": "Ever since its launch in the late 2012, ShoeBeDo continues to grow 100% on a year-to-year basis and has become a top selling store in the client's retail chain and one of the best renowned webshops in the Croatian market. Marko Beljan and Zoran Šteković will talk about what it takes to build an e-commerce of such a standard.",
+      "links": {
+        "website": "http://broj42.com/"
+      }
+    },
+    {
+      "id": 8,
+      "type": "L",
+      "time": "15.45— 16.30",
+      "location": "Croatian National Theatre in Varazdin",
+      "author": "Artnak & Prodanovič",
+      "position": "Fatsell, Ljudje d.o.o.",
+      "img": "Miha_Artnak_&_Srdan_Prodanovic.jpg",
+      "author_desc": "Human The Miha Artnak is a versatile artist and designer of visual communications. He graduated at the Academy of Fine Arts and Design in Ljubljana. He doesn’t have a favorite color, loves peace and will change the world. Hopefully with you.",
+      "title": "Ljudje: Online businesses and contemporary tools",
+      "description": "People is a comprehensive design organisation that helps great individuals or companies become even better and stand out with creative and up-to-date solutions. We reject top-down, demeaning communication and strive to create a dialogue. From transportation to education, we have helped transform businesses from local to global and still stand by them to this day.",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/mihaartnak",
+        "linkedin": "https://linkedin.com/in/some1else",
+        "website": "http://ljudje.si/",
+        "website": "https://fatsell.com/"
+      }
+    },
+    {
+      "id": 9,
+      "type": "L",
+      "time": "16.35— 17.20",
+      "location": "Croatian National Theatre in Varazdin",
+      "author": "Dea Vladilo",
+      "position": "PR Manager at Bellabeat",
+      "img": "Dea_Vladilo.jpg",
+      "author_desc": "Dea attended the Faculty of Political Science at the University of Zagreb, where she received her bachelor’s degree in Journalism. After working as a journalist for Vecernji list, a Croatian newspaper, Dea served her PR internship in Adris Group. She joined Bellabeat in September 2014. In 2015 they’ve attended CES (Consumer Electronics Show) in Las Vegas, US, and announced their top selling product, a health tracker for women, the LEAF. Aside from being Bellabeat’s spokesperson, Dea is responsible for the company’s public relations with journalists, bloggers, influencers and affiliate partners. Since its launch in May 2015 the LEAF by Bellabeat was sold in over 200k devices and received praise from Forbes, The Wall Street Journal, Techcrunch, Wired, Buzzfeed, VOGUE, Elle, Refinery29 and many others. The company’s products were sported by actress Mila Kunis, fashion blogger and model Chiara Ferragni and others. Dea defines her team as her family, her motto is: “Make it simple, but significant”.",
+      "title": "Women oriented technology",
+      "description": "We often hear how women are not really interested in tech products. Even though there’s a lot of discussion about the lack of women in tech as creators and developers of products, there is a little less constructive talk heard about women as users of technology. Obviously, less products are build with women in mind because there is less women involved in building them, but it is a huge misconception that women are not interested in technology, they’re just overlooked as users! Women today are actually the primary buyers and users of personal and household technology.",
+      "links": {
+        "website": "https://www.bellabeat.com",
+        "facebook": "https://www.facebook.com/bellabeat",
+        "twitter": "https://twitter.com/getbellabeat"
+      }
+    },
+    {
+      "id": 11,
+      "type": "L",
+      "time": "17.40— 18.25",
+      "location": "Croatian National Theatre in Varazdin",
+      "author": "Ivan Bjelajac",
+      "position": "Designer at Five",
+      "img": "Ivan_Bjelajac.jpg",
+      "author_desc": "I’m a UX/UI designer currently working at Five - a design drive app development agency. My responsibilities are user experience design, user interface design, branding, animation and so on. I care deeply about creating great digital products that focus on the user and when I do have some free time, it’s filled up with cooking, going to concerts and riding bikes. ",
+      "title": "Running a design sprint",
+      "description": "A design sprint is a five-day exercise that uses design methods to reduce risks when developing a product for a market. Through collaboration and generating ideas months of work are compressed into an intense week. At the end of it we test and validate any ideas and assumptions we have about the product we’re developing. What’s a design sprint and how do you run it? What’s the designers role and which tools does he use?",
+      "links": {
+        "website": "http://www.ibjelajac.com",
+        "dribble": "https://dribbble.com/ibjelajac"
+      }
+    },
+    {
+      "id": 12,
+      "type": "L",
+      "time": "18.30 — 19.15",
+      "location": "Croatian National Theatre in Varazdin",
+      "author": "Grubišić & Šestak ",
+      "img": [
+        { "author": "Hrvoje Grubišić",
+          "position": "Head of Design at Degordian",
+          "img": "Hrvoje_Grubisic.jpg"},
+        { "author": "Mario Šestak",
+          "position": "Interactive Art Director at Degordian",
+          "img": "Mario_Sestak.jpg"}
+      ],
+      "author_desc": "Hrvoje is Head of Design at an award-winning independend digital production and marketing agency Degordian. He is selected to be a part of design jury for Awwwards 2015 & 2016. In addition to leading a team of young experts including designers, motion designers and front end developers, he is also the product designer at Mediatoolkit. At Degordian he is responsible for defining project specifications, creative direction and digital concepting.Mario is currently working as an Interactive Art Director in Degordian, an independent digital production & marketing agency. His major responsibilities include: planning, research, website analysis, wireframing, visual and interface design. With strong knowledge in technology and processes he also handles coordination with development (front end, backend), account team and content team.",
+      "title": "The value of interactive design",
+      "description": "Interactions and their design have long been a part of the design process of digital products, which is intended for customers and meeting their needs. Although often a hot topic of discussion, interaction design has certainly earned its place in creating a superior user experience, but what is its real value?",
+      "links": {
+        "website": "http://www.degordian.com/",
+        "dribble": "https://dribbble.com/degordian"
+      }
+    },
+    {
+      "id": 14,
+      "type": "L",
+      "time": "19.20 — 20.00",
+      "location": "Croatian National Theatre in Varazdin",
+      "author": "Marina Matijaca",
+      "img": "Marina_Matijaca.png",
+      "position": "Designer at Unity/Profico.",
+      "author_desc": "Marina is a designer who studied law. Since she discovered her love for pixels she’s been creating UI’s like crazy. Loves UX and dogs. Currently works as UI/UX designer at Unity/Profico.",
+      "title": "My story: From zero to hero",
+      "description": "How I managed to hack my way into the design community in one year",
+      "links": {
+        "website": "http://www.degordian.com/",
+        "dribble": "https://dribbble.com/degordian"
+      }
+    },
+    {
+      "id": 13,
+      "type": "V",
+      "time": "21.00 — 23.00",
+      "location": "The King Tomislav square",
+      "author": "Ivan Lušičić Liik ",
+      "img": "Ivan_Liik.png",
+      "position": "Media-artist",
+      "author_desc": "Ivan Lušičić Liik is an architect that got tangled in the wires of new media and technologies. He started his work in video and VJing about the same time he started his studies so the two lines consequently affected each other. Over the years as an author and collaborator he performed for club nights, music and art festivals, concerts, theatre and dance performances and one opera. From time to time he tutors workshops on experimental media in the context of architecture, VJing and 3D mapping for all ages. Member of Croatian association of applied artist since 2011, and currently a member of the arts council for the media section within the association.",
+      "title": "ORNAMENT III interactive 3D mapping installation ",
+      "description": "ORNAMENT III is conceived as na installation that establishes the physical connection between the virtual and real space. By distorting objects and blurring the limits of visual perception the audience is immersed in projections of abstract forms and spaces even if for a short while. At the same time sound effects enhance the experience. The audience is not just a passive observer of the interaction between the virtual and physical but is also an active user and controller of the content by using a sensor that recognises hand gestures and movement in that way transforming the sound and the projection.",
+      "links": {
+        "website": "http://www.ivanliik.net"
+      }
+    },
+    {
+      "id": 14,
+      "type": "L",
+      "time": "19.20 — 20.05",
+      "location": "Croatian National Theatre in Varazdin",
+      "author": "MOP",
+      "author_desc": "",
+      "title": "MOP dribble meetup",
+      "description": "",
+      "links": {
+      }
+    },
+    {
+      "id": 15,
+      "type": "E",
+      "time": "20.00 — 20.30",
+      "location": "Gallery Center Varaždin",
+      "author": "Vana Gaćina",
+      "title": "Vestigum"
+    },
+    {
+      "id": 16,
+      "type": "P",
+      "time": "22.00 — 05.00",
+      "author": "MyWay",
+      "title": "DJ Mario Horvat"
+    },
+    {
+      "id": 17,
+      "type": "P",
+      "time": "22.00 — 05.00",
+      "author": "Elephant",
+      "title": "DOT"
+    },
+    {
+      "id": 24,
+      "type": "P",
+      "time": "22.00 — 05.00",
+      "author": "Mea Culpa",
+      "title": "Clubing"
+    },
+    {
+      "id": 25,
+      "type": "P",
+      "time": "22.00 — 05.00",
+      "author": "Aquamarin",
+      "title": "Clubing"
+    },
+    {
+      "id": 19,
+      "type": "P",
+      "time": "22.00 — 05.00",
+      "author": "Zvonimir Rogoz Bar",
+      "title": "VJ Franjo Maltar"
+    },
+    {
+      "id": 20,
+      "type": "P",
+      "time": "22.00 — 05.00",
+      "author": "Zvonimir Rogoz Bar",
+      "title": "Chui"
+    },
+    {
+      "id": 21,
+      "type": "P",
+      "time": "22.00 — 05.00",
+      "author": "Zvonimir Rogoz Bar",
+      "title": "DTM"
+    },
+    {
+      "id": 22,
+      "type": "P",
+      "time": "22.00 — 05.00",
+      "author": "Zvonimir Rogoz Bar",
+      "title": "Mc Big OZ"
+    },
+    {
+      "id": 23,
+      "type": "P",
+      "time": "22.00 — 05.00",
+      "author": "Zvonimir Rogoz Bar",
+      "title": "Filip Motovunski"
+    }
+  ]
+}

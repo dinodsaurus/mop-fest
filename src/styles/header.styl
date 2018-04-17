@@ -1,0 +1,53 @@
+@import "./colors.styl"
+@import "./mixins"
+.header
+  padding-top:50px
+  @media phone
+    padding-top: 20px
+h1
+  font-size:28px
+  line-height:28px
+  float: left
+  margin: 0 0 0 40px
+  color: $blue
+  @media phone
+    margin-left: 20px
+.menu
+  position:relative
+  float:right
+  margin-right: 40px
+  width: 145px
+  height: 50px
+  @media phone
+    float:left
+    width: calc(100% - 40px)
+    height: 60px
+    margin: 0 20px 40px
+  &:hover
+    .double
+      top: 20px
+      left: 10px
+  .double
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 101
+    width: 100%
+    height: 100%
+    border: 5px solid $blue
+    transition: all .3s
+  .menuLink
+    position:absolute
+    display:block
+    width: 145px
+    line-height: 50px
+    border: 5px solid $blue
+    font-size:21px
+    font-family: "DiaBlack"
+    text-align:center
+    background:white
+    z-index:101
+    cursor:pointer
+    @media phone
+      width: 100%
+      height: 100%

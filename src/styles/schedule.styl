@@ -1,0 +1,77 @@
+@import "./colors"
+@import "./fonts"
+@import "./mixins"
+.schedule
+  .container
+    margin-top: 2000px
+    @media phone
+      margin-top: 0
+      padding: 0 20px
+.title
+  width: 100%
+  margin-top: 50px
+  text-align: center
+  h2
+    background:white
+    color: $blue
+    font-size: 140px
+    margin-top: 180px
+    padding: 30px 50px
+    @media phone
+      font-size: 50px
+      margin-top: 20px
+      text-align: left
+      padding: 0 20px
+
+.filters
+  height: 100px
+  transition: height .5s
+  overflow: hidden
+  border-bottom: 3px solid $blue
+  &.active
+    height: 650px
+    h3
+      &:after
+        top: 12px
+        transform: rotate(135deg)
+  h3
+    float:left
+    position:relative
+    font-size: 36px
+    text-transform: capitalize
+    cursor: pointer
+    &:after
+      position:absolute
+      right: -35px
+      top: 7px
+      transform: rotate(-45deg);
+      content: ""
+      width: 18px
+      height: 18px
+      border-left: 4px solid $blue
+      border-bottom: 4px solid $blue
+  ul
+    margin: 100px 0 0 0
+    padding: 0
+    li
+      background:$blue
+      padding: 30px
+      list-style: none
+      margin-top: 10px
+      &:hover
+        p
+          text-decoration: underline
+      p
+        color: white
+        font-size: 36px
+        float:left
+      .circle
+        float:right
+        background: white
+        color: $blue
+        width: 40px
+        height: 40px
+        border-radius: 20px
+        text-align:center
+        font-size: 26px
+        line-height: 40px

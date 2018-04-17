@@ -1,0 +1,120 @@
+{
+  "schedule": [
+    {
+      "id": 1,
+      "type": "W",
+      "time": "10.00 — 13.00",
+      "location": "Palace Herzer",
+      "author": "JavaScript Zagreb",
+      "author_desc": "A monthly meetup of JavaScript developer enthusiasts from Zagreb and region.",
+      "title": "NodeSchool workshop",
+      "description": "NodeSchool events are open source workshops that teach web software skills, focused on Node and JavaScript. The organization is fully non profit and events are organized all over the world. At this event we will focus on getting you write your first Node application. Every participant will be assigned a mentor who will guide him through NodeSchool tutorials. Bring your laptops with power adapters and we will prepare the rest.",
+      "links": {
+        "website": "http://nodeschool.io/zagreb/",
+        "github": "https://github.com/jszgb/jszgb.github.io",
+        "meetup": "http://www.meetup.com/JavaScript-Zagreb/"
+      }
+    },
+    {
+      "id": 2,
+      "type": "W",
+      "time": "13.00 — 17.45",
+      "location": "Palace Herzer",
+      "author": "UX Passion - Darko Čengija",
+      "position": "Usability Specialist at UX Passion",
+      "img": "Darko_Cengija.jpg",
+      "author_desc": "UX Passion is full service UX design and usability firm with global reach.",
+      "title": "User Experience Techniques",
+      "description": "The workshop is useful to anyone who is doing any kind of designing of interactions between a human and a product. The goal of the workshop is not only to inform the attendees about which techniques exists, but also to teach them the basics which they can apply later on in their everyday work.",
+      "links": {
+        "website": "https://www.facebook.com/uxpassion/",
+        "facebook": "https://www.facebook.com/uxpassion/ "
+      }
+    },
+    {
+      "id": 6,
+      "type": "L",
+      "time": "17.20 — 18.15",
+      "location": "Croatian National Theatre in Varazdin",
+      "author": "Pintarić & Pašalić",
+      "img": [
+        {
+          "author": "Martina Pintarić",
+          "position": "Director/Partner at 404",
+          "img": "Martina_Pintaric.jpg"
+        },
+        {
+          "author": "Amela Pašalić",
+          "position": "Senior Consultant at 404 ",
+          "img": "Amela_Pasalic.jpg"
+        }
+      ],
+      "author_desc": " Martina began her career in journalism and switch to public relations in 2005.Since 2005 she worked in PR agencies Millenium komunikacije and Premisa where she headed teams working on various communication projects for clients in different industries.Has experience in corporate and internal communication, media relations and crisis communication.She is responsible for media relations at the Weekend Media Festival, region’s biggest communication industry’s conference in South Eastern Europe and the ATP Croatia Open tournament in Umag. Amela has eight years of experience in communications, media relations, crisis communication, marketing and social media. She worked in PR agency Premisa as a consultant and in marketing agency Digitel as project manager where she headed teams working on various projects for clients in different industries. She is also an external associate for Zagreb Dance Centre as head of public relations and protocol of the Dance Week Festival, producer and project manager for EU projects",
+      "title": "Uber launch in Zagreb - communication support",
+      "description": "Uber is a global technology company that has caused a revolution in the global transport industry over the past five years. The company is present in 60 countries and almost 400 cities around the world. It is a technology platform providing services of digital intermediation through its mobile app and connecting riders with partner-drivers. Even though people around the world love the app, it was not always accepted as a welcomed competition considering its rapid expansion and innovative approach to transport. Uber was launched in Zagreb in October 2015 and in the last 6 months almost 50.000 users downloaded the app.",
+      "links": {
+        "website": "https://www.facebook.com/uxpassion/",
+        "facebook": "https://www.facebook.com/uxpassion/ "
+      }
+    },
+    {
+      "id": 3,
+      "type": "L",
+      "time": "18.30 — 19.15",
+      "location": "Croatian National Theatre in Varazdin",
+      "author": "Sandro Dujmenović",
+      "position": "Founder & Design Director at SDDS",
+      "img": "Sandro_Dujmenovic.jpg",
+      "author_desc": "Designer and Art Director from Zadar, running SDDS, design studio and consultancy in Zagreb. Born in Banja Luka, BiH, graduated from UMAS/DVK in Split and School of Design in Zagreb. Designed visual communication for major Croatian and British clients for Bunch, worked as an Art Director for Brlog, digital agency of Bruketa&Žinić group. Co-author of new typefaces for Museum of Louvre in Paris. Also worked with Red Bull, Erste, Diners, Fact Mag, Eastern Electrics, Croatian Telecom, Adris Group, United Nations, Guinness and many more. Selected for biannual Exhibition of Croatian Design, and ZGRAF. Published in Novum, Creative Review, Computer Arts magazine. Works with clients regardless of medium, platform or time zones. From concrete to paper.",
+      "title": "Design Talk",
+      "description": "",
+      "links": {
+        "website": "Design Dialogues"
+      }
+    },
+    {
+      "id": 7,
+      "type": "L",
+      "time": "19.15 — 20.00",
+      "location": "Croatian National Theatre in Varazdin",
+      "author": "Marko Hrastovec",
+      "position": "Type and graphic designer",
+      "img": "Marko_Hrastovec.jpg",
+      "author_desc": "Marko Hrastovec was born in 1990. in Varaždin, earned his bachelor’s degree at School of Design in Zagreb in 2012., and master’s degree in 2014. Same year he pursued 'Type and Media’ master course at 'Royal Academy of Art’ in The Hague, The Netherlands. He started doing type design and type driven design in early days of his studies, so there are some notable collabs with Nikola Đurek (Typonine) in type design domain. Marko was one of the editors for Croatian translation of Gerrit Noordzij’s The Stroke - Potez. At the moment he’s splitting his time between teaching type design and typography at School of Design in Zagreb and client work. He’s also busy developing his own projects for which he in 2016. recieved ‘Certificate of Typographic Excellence’ from New York Type Directors Club.",
+      "title": "Design Talk",
+      "description": "",
+      "links": {
+        "website": "http://www.markohrastovec.com",
+        "dribble": "https://dribbble.com/markhrast",
+        "typotheque": "http://www.typotheque.com",
+        "tumblr": "http://www.dijakritika.tumblr.com"
+      }
+    },
+    {
+      "id": 4,
+      "type": "L",
+      "time": "20.00 — 21.00",
+      "location": "Croatian National Theatre in Varazdin",
+      "author": "Šesnić&Turković",
+      "position": "Design studio",
+      "img": "S&T.jpg",
+      "author_desc": "Šesnić&Turković is a design studio in Zagreb. It was founded by Marko Šesnić and Goran Turković in their student days. They approach every project with the same basic mission – to find a quality, creative solution which will give it communication strength, longevity, and set it apart from the competition. That approach is applied in every aspect of their work: visual identities, signage, exhibition design, stand design, publication design, ads and promo materials, souvenir design… They carry out and control projects from start to finish, with the help of regular associates; architects, product designers, art directors, animators, programmers and print shops. The studio has received numerous international and national awards, and their works have been exhibited at most relevant exhibitions in the region, as well as in many professional publications.",
+      "title": "Parks of Croatia – a pretty big visual identity",
+      "description": "In 2014/2015 Šesnić&Turković studio designed the  group visual identity ‘Parks of Croatia’. The identity is comprised of 19 individual visual identities for all Nature Parks and National Parks and the cover identity of ‘Parks of Croatia’. In their estimate, that is the most extensive design work done for state institutions in the last 10 years. The lecture about this project will cover all the phases of the project: design proposals, execution, implementation and assessment of the current condition a year or two after the implementation. ",
+      "links": {
+        "website": "http://www.sesnicturkovic.com",
+        "facebook": "https://www.facebook.com/SesnicTurkovic",
+        "twitter": "https://www.facebook.com/SesnicTurkovic",
+        "behance": "https://www.behance.net/sesnicturkovic"
+      }
+    },
+    {
+      "id": 5,
+      "type": "P",
+      "time": "22.00 — 05.00",
+      "location": "Lavra",
+      "author": "Lavra",
+      "title": "Party POWERED BY SOMERSBY"
+    }
+  ]
+}
