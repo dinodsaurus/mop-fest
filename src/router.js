@@ -5,7 +5,7 @@ import React from 'react';
 import { Router, Route, browserHistory, IndexRoute } from 'react-router';
 import App from './components/App';
 import Home from './components/home';
-import Schedule from './components/schedule';
+import Schedule from './components/Schedule';
 import Speakers from './components/speakers';
 import Sponsors from './components/sponsors';
 import About from './components/about';

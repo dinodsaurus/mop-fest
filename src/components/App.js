@@ -3,7 +3,7 @@ import Header from './header'
 import Footer from './footer'
 import Paralax from './paralax/paralax'
 import LoadingStore from 'stores/loading';
-import Loading from './loading';
+import Loading from './Loading';
 
 class AppComponent extends React.Component {
   constructor(ref) {
