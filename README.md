@@ -17,7 +17,7 @@ In this repository you can find the whole website.
 
 ##### Please refer to `package.json` for the list of available scripts!
 
-#### Deployed on netlify
+#### [Deployed on netlify](https://app.netlify.com)
 
 
 ## License
