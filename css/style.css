@@ -1,0 +1,389 @@
+@font-face {
+  font-family: 'MOP2018';
+  src: url('../fonts/MOP2018.eot');
+  src: url('../fonts/MOP2018.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/MOP2018.woff') format('woff'),
+  url('../fonts/MOP2018.woff2') format('woff2'),
+  url('../fonts/MOP2018.svg#MOP2018') format('svg');
+}
+
+*{
+  box-sizing: border-box;
+  font-family: 'MOP2018';
+}
+
+body, html{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+.container{
+  position: relative;
+  max-width: 834px;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  min-height: 100vh;
+  overflow: hidden;
+  transform: translateZ(0);
+  background-color: #fff;
+}
+
+.tape{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.btn{
+  border: 1px solid #000;
+  color: #000;
+  padding: 18px 26px 16px;
+  outline: 0;
+  background-color: transparent;
+  font-size: 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: color 300ms, background-color 300ms;
+  backface-visibility: hidden;
+  text-decoration: none;
+}
+
+.btn:hover{
+  background-color: #000;
+  color: #fff;
+}
+
+.svg-title{
+  position: absolute;
+  max-width: 100%;
+  overflow: hidden;
+  background-color: #fff;
+  pointer-events: all;
+}
+
+.svg-title div{
+  position: relative;
+  width: 10000px;
+  animation: marqueeAnimation 15s linear 0s infinite;
+  padding: 10px;
+}
+
+.svg-title:hover div{
+  animation-play-state: paused;
+}
+
+.svg-title--top{
+  top: 0;
+  left: 0;
+  right: 60px;
+  z-index: 4;
+}
+
+.svg-title--left{
+  top: 0;
+  left: 66px;
+  transform-origin: 0 0;
+  transform: rotate(90deg);
+  min-width: 100vh;
+  z-index: 3;
+}
+
+.svg-title--right{
+  top: 0;
+  right: 66px;
+  transform: rotate(-90deg);
+  transform-origin: 100% 0;
+  min-width: 100vh;
+}
+
+.svg-title--bottom{
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.svg-title--left div, .svg-title--right div, .svg-title--bottom div{
+  animation-direction: reverse;
+}
+
+.svg-title img{
+  max-height: 46px;
+  margin-right: 40px;
+}
+
+.svg-title--left img, .svg-title--right img{
+  transform: rotate(180deg);
+}
+
+header video, header .text-wrapper{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+header video{
+  max-height: calc(100% - 150px);
+  backface-visibility: hidden;
+}
+
+header .text-wrapper{
+  text-align: center;
+  transition: opacity 300ms, visibility 300ms;
+  backface-visibility: hidden;
+  z-index: 2;
+}
+
+header .text-wrapper.is-hidden{
+  opacity: 0;
+  visibility: hidden;
+}
+
+header .text-wrapper img{
+  display: block;
+  margin-bottom: 40px;
+  max-width: 100%;
+}
+
+.schedule{
+  position: relative;
+  text-align: center;
+  margin-top: 100vh;
+  z-index: -1;
+}
+
+.schedule .single + .single{
+  margin-top: 200px;
+}
+
+.schedule .single h2 span, .schedule .single h3 span{
+  display: block;
+}
+
+.schedule h2{
+  font-size: 140px;
+  font-weight: normal;
+  line-height: 1;
+  margin: 0 0 65px;
+  text-transform: uppercase;
+}
+
+.schedule h3{
+  font-size: 50px;
+  font-weight: normal;
+  line-height: 1.2;
+  margin: 40px 0 0;
+  max-width: 100%;
+}
+
+.schedule h4{
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 1;
+  margin: 20px 0;
+}
+
+.schedule h5{
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 1;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.schedule .btn{
+  margin-top: 40px;
+}
+
+.schedule .item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 0;
+  border-bottom: 1px solid #000;
+}
+
+.schedule .item:first-of-type{
+  border-top: 1px solid #000;
+}
+
+.arrival{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 300px 0 200px;
+  text-align: center;
+}
+
+.arrival h2{
+  font-size: 140px;
+  font-weight: normal;
+  line-height: 1;
+  text-transform: uppercase;
+  margin: 0 0 35px;
+}
+
+.arrival .btn{
+  display: inline-block;
+  text-decoration: none;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.info{
+  text-align: center;
+  max-width: 375px;
+  margin: 0 auto 255px;
+}
+
+.info .social{
+  margin-bottom: 80px;
+}
+
+.info .social img{
+  display: block;
+  margin: 0 auto 30px;
+  cursor: pointer;
+}
+
+.info .social a{
+  color: #000;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.info .social a:hover{
+  text-decoration: underline;
+}
+
+.info p, .info h3, .info .to-top{
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.43;
+  margin: 0;
+}
+
+.info .to-top{
+  margin-top: 145px;
+}
+
+.info .item + .item{
+  margin-top: 45px;
+}
+
+.to-top{
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+.to-top img{
+  display: block;
+  margin: 0 auto 25px;
+  transition: transform 200ms;
+  backface-visibility: hidden;
+}
+
+.to-top:hover img{
+  transform: translateY(-5px);
+}
+
+@media screen and (max-width: 1024px){
+  .container{
+    padding: 0 60px;
+  }
+}
+
+@media screen and (max-width: 855px){
+  .btn{
+    font-size: 16px;
+    padding: 14px 24px 12px;
+  }
+
+  header video{
+    max-height: none;
+    max-width: calc(100% - 70px);
+  }
+
+  .svg-title img{
+    max-height: 35px;
+  }
+
+  .svg-title--left{
+    left: 46px;
+  }
+
+  .svg-title--right{
+    right: 46px;
+  }
+
+  .schedule .item{
+    padding: 50px 0;
+  }
+
+  .schedule .single + .single{
+    margin-top: 140px;
+  }
+
+  .schedule h2{
+    font-size: 95px;
+    margin: 0 0 50px;
+  }
+
+  .schedule h3{
+    font-size: 25px;
+  }
+
+  .schedule h4{
+    font-size: 24px;
+    margin: 10px 0;
+  }
+
+  .schedule h5{
+    font-size: 18px;
+  }
+
+  .arrival{
+    margin: 150px 0 100px;
+  }
+
+  .arrival h2{
+    font-size: 95px;
+  }
+
+  .info{
+    margin-bottom: 120px;
+  }
+}
+
+@media screen and (max-width: 640px){
+  .schedule h2, .arrival h2{
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .schedule h2, .arrival h2{
+    font-size: 40px;
+  }
+}
