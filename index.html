@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>MOP 2018</title>
 	<link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-touch-icon.png">
@@ -10,10 +10,10 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
 	<link rel="manifest" href="images/favicon/site.webmanifest">
 	<link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.css?2">
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="theme-color" content="#000000">
-
+	
 	<meta property="og:image" content="images/share-image.jpg">
 	<meta property="og:image:height" content="314">
 	<meta property="og:image:width" content="600">
@@ -21,7 +21,7 @@
 	<meta property="og:title" content="MOP Špancirfest 7">
 	<meta property="og:url" content="http://www.mop-fest.com">
 </head>
-<body>
+<body class="loading">
 	<section class="tape">
 		<div class="svg-title svg-title--top">
 			<div>
@@ -60,10 +60,24 @@
 		<video autoplay loop>
 			<source src="videos/header-video.mp4" type="video/mp4">
 			</video>
-
+			
 			<div class="text-wrapper">
-				<img src="images/logo.svg" alt="MOP2018" class="header-logo">
-				<button class="btn" data-scrollto=".schedule">Program</button>
+				<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 577 161" xmlns:xlink="http://www.w3.org/1999/xlink">
+					<defs>
+						<polygon id="a" points="0 .449 576.635 .449 576.635 160.382 0 160.382"/>
+					</defs>
+					<g fill="none" fill-rule="evenodd">
+						<g>
+							<mask id="b" fill="white">
+								<use xlink:href="#a"/>
+							</mask>
+							<path class="main-logo" fill="#000000" d="M513.980781,82.3867509 C533.857242,82.3867509 545.308638,71.8709471 545.308638,56.7534188 C545.308638,40.1030104 533.857242,32.2165431 513.980781,32.2165431 L391.694166,32.2165431 L391.694166,3.73489154 L508.579007,3.73489154 C551.142311,3.73489154 576.634974,19.2903856 576.634974,56.7534188 C576.634974,88.9593211 550.708891,110.868402 508.579007,110.868402 L424.101769,110.868402 L424.101769,157.095377 L391.694166,157.095377 L391.694166,82.3867509 L513.980781,82.3867509 Z M284.752118,129.710182 C311.543519,129.710182 333.579472,108.896015 333.579472,80.414363 C333.579472,51.9342536 311.543519,30.9011037 284.752118,30.9011037 C257.962239,30.9011037 236.140714,51.9342536 236.140714,80.414363 C236.140714,108.896015 257.962239,129.710182 284.752118,129.710182 Z M284.752118,0.448606445 C328.179219,0.448606445 363.611633,35.2823032 363.611633,80.414363 C363.611633,125.546423 328.179219,160.381662 284.752118,160.381662 C241.326538,160.381662 205.894125,125.546423 205.894125,80.414363 C205.894125,35.2823032 241.326538,0.448606445 284.752118,0.448606445 Z M32.4077551,157.095377 L0.000152076973,157.095377 L0.000152076973,3.73489154 L20.5244604,3.73489154 C61.3586484,3.73489154 88.7978967,39.0080961 88.7978967,96.8457885 C88.7978967,39.0080961 116.453094,3.73489154 157.069812,3.73489154 L177.811591,3.73489154 L177.811591,157.095377 L145.402467,157.095377 L145.402467,39.227079 C111.699168,39.227079 88.7978967,62.6690404 88.7978967,96.8457885 C88.7978967,136.501735 113.426763,157.095377 145.402467,157.095377 L32.4077551,157.095377 C64.1675101,157.095377 88.7978967,136.501735 88.7978967,96.8457885 C88.7978967,62.6690404 66.1125746,39.227079 32.4077551,39.227079 L32.4077551,157.095377 Z" mask="url(#b)"/>
+						</g>
+						<polygon class="mop-7" fill="#000000" points="267.782 56.562 267.782 66.323 289.392 66.323 274.312 104.349 284.881 104.349 303.193 56.562"/>
+					</g>
+				</svg>
+				
+				<button class="btn" data-scrollto=".schedule" data-offset="half">Program</button>
 			</div>
 		</header>
 		<div class="container">
@@ -89,7 +103,7 @@
 						<h3>Lucija Gudek – 100 uzoraka na sjedalima</h3>
 					</div>
 					<div class="item">
-						<h5>Rogoz bar</h5>
+						<h5>HNK Varaždin</h5>
 						<h4>19.15 — 20.30</h4>
 						<h5>Izložba</h5>
 						<h3>Franjo Maltar – Video feedback</h3>
@@ -101,7 +115,7 @@
 						<h3>Voogle After party </h3>
 					</div>
 				</div>
-
+				
 				<div class="single">
 					<h2><span>18.05.</span>Petak</h2>
 					<div class="item">
@@ -135,7 +149,7 @@
 						<h5>Kino GAJ </h5>
 						<h4>19.00 — 20.00</h4>
 						<h5>Film</h5>
-						<h3>STIFFl – Međunarodni studentski filmski festival: The best off 1</h3>
+						<h3>STIFF – Međunarodni studentski filmski festival: The best off 1</h3>
 					</div>
 					<div class="item">
 						<h5>Kino GAJ </h5>
@@ -156,7 +170,7 @@
 						<h3>MOP Druženje</h3>
 					</div>
 				</div>
-
+				
 				<div class="single">
 					<h2><span>19.05.</span>Subota</h2>
 					<div class="item">
@@ -170,7 +184,7 @@
 						<h5>Kino GAJ</h5>
 						<h4>10.00 — 11.00</h4>
 						<h5>Film</h5>
-						<h3>STIFFl – Međunarodni studentski filmski festival: The best off 2</h3>
+						<h3>STIFF – Međunarodni studentski filmski festival: The best off 2</h3>
 					</div>
 					<div class="item">
 						<h5>HNK Varaždin</h5>
@@ -254,6 +268,10 @@
 					<p>Grad Varaždin, Turistička zajednica grada Varaždina, Studentski zbor Sveučilišta Sjever, UNIN</p>
 				</div>
 				<div class="item">
+					<h3>PARTNERI</h3>
+					<p>HNK u Varaždinu, Galerijski centar Varaždin, Gradski muzej Varaždin, Koncertni ured Varaždin, POU Varaždin i Kino Gaj</p>
+				</div>
+				<div class="item">
 					<h3>ORGANIZACIJSKI TIM</h3>
 					<p>Direktora festivala: Fran Mubrin</p>
 					<p>Koordinatori programa: Hrvoje Selec, Igor Pičuljan</p>
@@ -268,6 +286,6 @@
 				</button>
 			</section>
 		</div>
-		<script src="js/scripts.js"></script>
+		<script src="js/scripts.js?v2"></script>
 	</body>
 	</html>
