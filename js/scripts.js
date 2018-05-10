@@ -12,8 +12,19 @@ if (style.styleSheet){
 head.appendChild(style);
 
 var headerContent = document.querySelectorAll('header .text-wrapper')[0];
+var video = document.querySelectorAll('video')[0];
+video.play();
+var interval = setInterval(function(){
+  if(video.readyState === 4) {
+    document.body.classList.remove('loading')
+    clearInterval(interval);
+  }
+}, 100)
+
 window.addEventListener('scroll', checkOffset);
 window.addEventListener('load', checkOffset);
+window.addEventListener('scroll', changeHue);
+window.addEventListener('load', changeHue);
 
 function checkOffset(){
   var scrollTop = (window.pageYOffset || document.documentElement.scrollTop) - (document.documentElement.clientTop || 0);
@@ -22,6 +33,17 @@ function checkOffset(){
   }
   if(scrollTop < 100) headerContent.classList.remove('is-hidden')
 }
+
+function changeHue(e){
+  if(window.innerWidth < 850){
+    var scrollTop = (window.pageYOffset || document.documentElement.scrollTop) - (document.documentElement.clientTop || 0);
+    var height = Math.max(document.body.scrollHeight, document.body.offsetHeight, document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight);
+    video.style.filter = 'hue-rotate(-'+((scrollTop/height)*71)+'deg)'
+  }
+}
+
+
+
 
 var scrollers = document.querySelectorAll('[data-scrollto]');
 
@@ -36,13 +58,3 @@ for(var i = 0; i < scrollers.length; i++){
     window.scroll({top: top, left: 0, behavior: 'smooth' });
   })
 }
-
-
-var video = document.querySelectorAll('video')[0];
-video.play();
-var interval = setInterval(function(){
-  if(video.readyState === 4) {
-    document.body.classList.remove('loading')
-    clearInterval(interval);
-  }
-}, 100)
