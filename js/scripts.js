@@ -30,7 +30,7 @@ for(var i = 0; i < scrollers.length; i++){
     var element = e.target.dataset.scrollto != undefined ? e.target.dataset.scrollto : e.target.parentElement.dataset.scrollto
     var top = element != 'top' ? document.querySelectorAll(element)[0].getBoundingClientRect().top + window.scrollY - 100 : 0;
 
-    if(document.querySelectorAll(element)[0].dataset.offset = 'half'){
+    if(element != 'top' && document.querySelectorAll(element)[0].dataset.offset == 'half'){
       top -= window.innerHeight/4;
     }
     window.scroll({top: top, left: 0, behavior: 'smooth' });
