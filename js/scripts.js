@@ -1,4 +1,4 @@
-var css = '@keyframes marqueeAnimation  {100% {transform: translateX(-'+(document.querySelectorAll('.reference-img')[0].clientWidth+40)+'px)}}',
+/*var css = '@keyframes marqueeAnimation  {100% {transform: translateX(-'+(document.querySelectorAll('.reference-img')[0].clientWidth+40)+'px)}}',
 head = document.head || document.getElementsByTagName('head')[0],
 style = document.createElement('style');
 
@@ -10,6 +10,7 @@ if (style.styleSheet){
 }
 
 head.appendChild(style);
+*/
 
 var headerContent = document.querySelectorAll('header .text-wrapper')[0];
 var video = document.querySelectorAll('video')[0];

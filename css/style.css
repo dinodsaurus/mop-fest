@@ -7,6 +7,8 @@
   url('../fonts/MOP2018.svg#MOP2018') format('svg');
 }
 
+@keyframes marqueeAnimation  {100% {transform: translateX(-1412px)}}
+@keyframes marqueeAnimationMobile  {100% {transform: translateX(-1084px)}}
 *{
   box-sizing: border-box;
   font-family: 'MOP2018';
@@ -344,6 +346,10 @@ header .text-wrapper svg{
   header video{
     max-height: none;
     max-width: calc(100% - 70px);
+  }
+
+  .svg-title div{
+    animation: marqueeAnimationMobile 18.5s linear 0s infinite;    
   }
 
   .svg-title img{
