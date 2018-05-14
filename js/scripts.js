@@ -14,7 +14,6 @@ head.appendChild(style);
 
 var headerContent = document.querySelectorAll('header .text-wrapper')[0];
 var video = document.querySelectorAll('video')[0];
-video.play();
 var interval = setInterval(function(){
   if(video.readyState === 4) {
     document.body.classList.remove('loading')
