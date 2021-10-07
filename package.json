@@ -1,7 +1,7 @@
 {
     "name": "mop2018",
     "homepage": "http://mop-fest.com",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "private": true,
     "dependencies": {
         "copyfiles": "^2.0.0"
