@@ -4,7 +4,7 @@
     "version": "2.0.0",
     "private": true,
     "dependencies": {
-        "copyfiles": "^2.0.0"
+        "copyfiles": "^2.4.1"
     },
     "scripts": {
         "copy": "copyfiles -f ./* ./build && copyfiles -f ./css/* ./build/css && copyfiles -f ./fonts/* ./build/fonts && copyfiles -f ./images/* ./build/images && copyfiles -f ./images/favicon/* ./build/images/favicon && copyfiles -f ./js/* ./build/js && copyfiles -f ./videos/* ./build/videos",
